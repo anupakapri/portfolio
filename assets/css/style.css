@@ -1,0 +1,105 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #080708;
+    color           : #fff;
+}
+
+a {
+    text-decoration: none;
+    color          : #212529;
+}
+
+a:hover {
+    color: #212529;
+}
+
+.text-primary {
+    color: #d80010 !important;
+}
+
+.text-secondary {
+    color: #e36000 !important;
+}
+
+.btn-primary {
+    background-color: #d80010;
+    border-color    : #d80010;
+    border-radius   : 30px;
+}
+
+.btn-primary:hover {
+    background-color: #d80010;
+    border-color    : #d80010;
+}
+
+.sec-pad {
+    padding-top   : 50px;
+    padding-bottom: 50px;
+}
+
+.banner-wrapper {
+    background-image: url(../images/./banner-bg.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-wrapper {
+    height             : 100vh;
+}
+
+.main-title {
+    margin-bottom: 30px;
+    font-weight  : 400;
+}
+
+
+.btn-close:focus {
+    box-shadow: none;
+}
+
+.banner-content {
+    margin-top: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+    justify-content: space-between;
+}
+
+.banner-content  img {
+    width: 450px;
+    margin-bottom: 100px;
+}
+
+.banner-content #headline {
+    font-size: 70px;
+    line-height: 1.5;
+}
+
+@media (max-width: 552px) {
+    .banner-content #headline {
+        font-size: 45px;
+    }
+}
+
+.banner-content h2 {
+    color: #ff8d00;
+    font-size: 45px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    border-top: 10px solid;
+    padding-top: 20px;
+    width: max-content;
+    margin: auto;
+    margin-top: 60px;
+}
+
