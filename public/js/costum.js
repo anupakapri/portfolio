@@ -91,24 +91,36 @@ var swiper = new Swiper(".swiper", {
 
 
 
-// skill section
 
-var typing = new Typed(".text", {
-    strings: ["", "creators.", "editors."],
-    typeSpeed: 100,
-    backSpeed: 40,
-    loop: true
-  });
-  
-  // GSAP
-  gsap.registerPlugin(ScrollTrigger);
-  const introsplitTypes = document.querySelectorAll(".left-part h1");
-  introsplitTypes.forEach((char, i) => {
-    const i_text = new SplitType(char);
-    gsap.to(i_text.chars, {
-      y: 0,
-      stagger: 0.08, // text splitting transition
-      duration: 0.3 // full text duration
+
+gsap.registerPlugin(Flip);
+
+const activeClass = "is-active";
+const inactiveClass = "is-inactive";
+const cards = document.querySelectorAll(".project-section-wrapper .card");
+
+cards.forEach((card, idx) => {
+  card.addEventListener("click", () => {
+    const state = Flip.getState(cards);
+    const isCardActive = card.classList.contains(activeClass);
+
+    cards.forEach((otherCard, otherIdx) => {
+      otherCard.classList.remove(activeClass);
+      otherCard.classList.remove(inactiveClass);
+      if (!isCardActive && idx !== otherIdx)
+        otherCard.classList.add(inactiveClass);
+    });
+
+    if (!isCardActive) {
+      card.classList.add(activeClass);
+    }
+
+    Flip.from(state, {
+      duration: 1,
+      ease: "expo.out",
+      absolute: true
     });
   });
+});
+
   
