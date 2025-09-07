@@ -124,3 +124,27 @@ cards.forEach((card, idx) => {
 });
 
   
+
+let links = document.querySelectorAll(".link");
+
+links.forEach(link => {
+  let pink = link.querySelector(".link-color");
+
+  // create a timeline per link
+  let hoverTL = gsap.timeline({ paused: true });
+
+  hoverTL.to(pink, {
+    width: "calc(100% + 1.3em)",
+    ease: "elastic.out(0.25, 0.3)", // modern syntax
+    duration: 0.4
+  });
+  hoverTL.to(pink, {
+    width: "2em",
+    left: "calc(100% - 1.45em)",
+    ease: "elastic.out(0.4, 0.3)",
+    duration: 0.6
+  });
+
+  link.addEventListener("mouseenter", () => hoverTL.play());
+  link.addEventListener("mouseleave", () => hoverTL.reverse());
+});
