@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 15px;
+            height: 500px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .grid-item {
+            background-color: white;
+            border: 2px solid #4169e1;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #4169e1;
+            transition: transform 0.2s ease;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(65, 105, 225, 0.2);
+        }
+
+        .large-item {
+            grid-row: 1 / -1;
+            grid-column: 1;
+            font-size: 24px;
+        }
+
+        .item-1 { grid-area: 1 / 2; }
+        .item-2 { grid-area: 1 / 3; }
+        .item-3 { grid-area: 2 / 2; }
+        .item-4 { grid-area: 2 / 3; }
+        .item-5 { grid-area: 3 / 2; }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr repeat(5, 1fr);
+                height: auto;
+            }
+
+            .large-item {
+                grid-row: 1;
+                grid-column: 1;
+            }
+
+            .item-1 { grid-area: 2 / 1; }
+            .item-2 { grid-area: 3 / 1; }
+            .item-3 { grid-area: 4 / 1; }
+            .item-4 { grid-area: 5 / 1; }
+            .item-5 { grid-area: 6 / 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item large-item">Large Item</div>
+        <div class="grid-item item-1">Item 1</div>
+        <div class="grid-item item-2">Item 2</div>
+        <div class="grid-item item-3">Item 3</div>
+        <div class="grid-item item-4">Item 4</div>
+        <div class="grid-item item-5">Item 5</div>
+    </div>
+</body>
+</html>
