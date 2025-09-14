@@ -2598,10 +2598,10 @@ flex-direction: column;
 }
 .wrapper-2 p{
   margin:0;
-  font-size:1.3em;
-  letter-spacing:1px;
-  line-height: 1.5;
   color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
 }
 .go-home{
   background: #0a66c2;
