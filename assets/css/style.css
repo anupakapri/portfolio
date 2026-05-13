@@ -130,13 +130,20 @@ nav {
 
 /* ── HERO ── */
 .hero {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 120px 3rem 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   overflow: hidden;
+}
+
+@media (min-width: 900px) {
+  .hero {
+    min-height: 100vh;
+  }
+  
 }
 
 .hero-bg-text {
@@ -214,6 +221,12 @@ nav {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 0.7s 0.4s ease forwards;
+}
+
+@media (max-width: 600px) {
+  .hero-sub-row {
+    display: block;
+  }
 }
 
 .hero-desc {
@@ -680,6 +693,7 @@ section {
   gap: 1rem;
 }
 
+
 .bento-card {
   background: var(--bg-card);
   border-radius: var(--radius-lg);
@@ -688,6 +702,16 @@ section {
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+}
+
+@media (max-width:900px){
+  .bento-grid {
+    display: block;
+  }
+
+  .bento-card {
+    margin-bottom: 10px;
+  }
 }
 
 .bento-card:hover {
@@ -1137,6 +1161,12 @@ section {
   overflow: hidden;
 }
 
+@media (max-width:500px) {
+  .philosophy-section {
+    padding: 60px 1.5rem;
+  }
+}
+
 .philosophy-section::before {
   content: '"';
   position: absolute;
@@ -1421,3 +1451,4 @@ body:has(button:hover) .cursor-ring {
     text-align: center;
   }
 }
+
