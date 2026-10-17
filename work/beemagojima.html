@@ -1,0 +1,1299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beemagojima — Case study — Anupa Kapri</title>
+    <meta
+      name="description"
+      content="Case study: how Beemagojima grew from an insurance concept and brand into a connected digital insurance platform in Nepal. Product design, UX/UI and frontend by Anupa Kapri."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Beemagojima — Case study — Anupa Kapri"
+    />
+    <meta
+      property="og:description"
+      content="Designing a simpler digital insurance experience for Nepal."
+    />
+    <meta
+      property="og:url"
+      content="https://anupakapri.com.np/work/beemagojima.html"
+    />
+    <meta
+      property="og:image"
+      content="https://anupakapri.com.np/assets/images/plans.webp"
+    />
+    <meta name="theme-color" content="#F4F4F0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/motion.css">
+    <script>
+      (function (d) {
+        if (matchMedia("(prefers-reduced-motion:reduce)").matches) return;
+        d.classList.add("js-motion");
+        setTimeout(function () {
+          if (!window.__motionReady) d.classList.remove("js-motion");
+        }, 3000);
+      })(document.documentElement);
+    </script>
+    <noscript><style>[hidden]{display:block!important}</style></noscript>
+    
+  </head>
+  <body class="page-case">
+    <header>
+      <div class="wrap">
+        <a class="brand" href="../index.html">ANUPA KAPRI</a>
+        <nav aria-label="Main">
+          <button class="menu-btn" aria-expanded="false" aria-controls="menu">
+            Menu
+          </button>
+          <ul id="menu">
+            <li><a class="link" href="../index.html#work">Work</a></li>
+            <li><a class="link" href="../index.html#about">About</a></li>
+            <li>
+              <a class="link" href="../index.html#experience">Resume</a>
+            </li>
+            <li><a class="link" href="../index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <span class="progress" aria-hidden="true"></span>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="wrap">
+          <p class="label">Case study / Product design</p>
+          <h1>Beemagojima</h1>
+          <div class="grid hl">
+            <p class="sub">
+              Designing a simpler digital insurance experience for Nepal.
+            </p>
+            <p class="lead">
+              Beemagojima evolved from an insurance concept and brand into a
+              connected digital experience spanning discovery, insurance
+              purchase, policy management and claims.
+            </p>
+          </div>
+          <dl class="meta3">
+            <div>
+              <dt>Role</dt>
+              <dd>Product Designer · UI/UX Designer · Frontend Developer</dd>
+            </div>
+            <div>
+              <dt>Scope</dt>
+              <dd>
+                Product design · UX/UI · Brand · Web · Mobile · Customer portal
+                · Admin · Claims
+              </dd>
+            </div>
+            <div>
+              <dt>Tools</dt>
+              <dd>Figma · HTML · CSS · JavaScript</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <div class="tabs-bar">
+        <div class="wrap">
+          <div class="tabs" role="tablist" aria-label="Case study views">
+            <button type="button" role="tab" id="tab-tldr" class="tab" aria-controls="panel-tldr" aria-selected="true">TL;DR</button>
+            <button type="button" role="tab" id="tab-full" class="tab" aria-controls="panel-full" aria-selected="false" tabindex="-1">Full case study</button>
+          </div>
+        </div>
+      </div>
+      <!-- <section class="hero-fig">
+        <div class="wrap">
+          <figure class="fig">
+            <img
+              src="../assets/images/plans.webp"
+              width="1400"
+              height="932"
+              loading="lazy"
+              alt="Beemagojima plan comparison page listing available plans with filters and the customer vehicle details"
+            />
+            <figcaption>
+              Plan comparison in the customer web application
+            </figcaption>
+          </figure>
+        </div>
+      </section> -->
+
+      <div id="panel-tldr" role="tabpanel" aria-labelledby="tab-tldr" class="tldr">
+      <section class="sec">
+        <div class="wrap grid">
+          <p class="lab">TL;DR</p>
+          <div class="main rv">
+            <p class="goal-l">The goal</p>
+            <p class="goal">Make insurance easier to explore, purchase and manage online.</p>
+            <p class="tags">Four problems, and what I did about each. The full case study has the longer story.</p>
+          </div>
+        </div>
+      </section>
+      <section class="sec tl">
+        <div class="wrap grid">
+          <p class="lab">01 / Pricing</p>
+          <div class="main rv">
+            <div class="tl-grid">
+              <div class="tl-c">
+                <span class="tag">Challenge</span>
+                <h3>Users had to fill in too many fields before seeing a price</h3>
+                <p>Potential customers had to provide 15–20 fields of information just to check an insurance premium. This created a barrier before they could even decide whether to buy.</p>
+                <p class="delta"><span>Before</span> 15–20 fields to see a price<br /><span>After</span> 3 vehicle details</p>
+              </div>
+              <div class="tl-s">
+                <span class="tag">Solution</span>
+                <h3>A simple, one-step premium calculator</h3>
+                <p>I designed a hassle-free calculator that allowed users to estimate their insurance premium by entering just three vehicle details, without logging in or registering. Users could explore the price first and proceed to registration only when they clicked Buy.</p>
+                <figure class="fig"><img src="../assets/images/beemagojima-quote.webp" width="1386" height="970" loading="lazy" alt="Premium calculator asking vehicle age, capacity and current value" /><figcaption>The calculator: three vehicle details, no login</figcaption></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec tl">
+        <div class="wrap grid">
+          <p class="lab">02 / Renewal</p>
+          <div class="main rv">
+            <div class="tl-grid">
+              <div class="tl-c">
+                <span class="tag">Challenge</span>
+                <h3>Renewing or purchasing another policy meant repeating information</h3>
+                <p>Existing customers could face unnecessary effort if they had to repeat the same process or enter their personal details again when renewing a policy or buying insurance for another vehicle or life.</p>
+              </div>
+              <div class="tl-s">
+                <span class="tag">Solution</span>
+                <h3>One-click renewal and reusable KYC details</h3>
+                <p>Existing users could renew a policy with one click after logging in. They could also purchase multiple types of insurance, such as motorcycle, car and life insurance, while reusing their existing KYC information and providing only the additional details required.</p>
+                <figure class="fig"><img src="../assets/images/kyc.webp" width="1400" height="707" loading="lazy" alt="KYC step asking who the policy is for, with saved profiles to choose from" /><figcaption>Choose a saved profile instead of starting again</figcaption></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec tl">
+        <div class="wrap grid">
+          <p class="lab">03 / Claims</p>
+          <div class="main rv">
+            <div class="tl-grid">
+              <div class="tl-c">
+                <span class="tag">Challenge</span>
+                <h3>Insurance claims could feel complicated</h3>
+                <p>Submitting an insurance claim involves providing information and completing several steps. Without a clear structure, the process can feel difficult to navigate.</p>
+              </div>
+              <div class="tl-s">
+                <span class="tag">Solution</span>
+                <h3>A guided three-step claim flow</h3>
+                <p>I worked on a three-step claims experience that broke the process into manageable stages, helping users understand what to do next instead of facing the entire process at once.</p>
+                <div class="slider" data-slider aria-roledescription="carousel" aria-label="Claim flow screens">
+                  <div class="sl-track" tabindex="0">
+                    <figure class="sl-slide fig" aria-roledescription="slide" aria-label="1 of 4">
+                      <img src="../assets/images/Claim type.png" width="1400" height="707" loading="lazy" alt="Claim flow, step 1: choosing what kind of claim to file" />
+                    </figure>
+                    <figure class="sl-slide fig" aria-roledescription="slide" aria-label="2 of 4">
+                      <img src="../assets/images/Select policy.png" width="1400" height="707" loading="lazy" alt="Claim flow, step 2: picking the policy the claim belongs to" />
+                    </figure>
+                    <figure class="sl-slide fig" aria-roledescription="slide" aria-label="3 of 4">
+                      <img src="../assets/images/Incident details.png" width="1400" height="707" loading="lazy" alt="Claim flow, step 3: describing what happened, with supporting documents" />
+                    </figure>
+                    <figure class="sl-slide fig" aria-roledescription="slide" aria-label="4 of 4">
+                      <img src="../assets/images/Claim received.png" width="1400" height="707" loading="lazy" alt="Claim flow, confirmation that the claim was received, with next steps" />
+                    </figure>
+                  </div>
+                  <div class="sl-ui">
+                    <ol class="sl-steps">
+                      <li><button type="button" data-to="0" aria-current="true"><span>01</span>Claim type</button></li>
+                      <li><button type="button" data-to="1"><span>02</span>Select policy</button></li>
+                      <li><button type="button" data-to="2"><span>03</span>Incident details</button></li>
+                      <li><button type="button" data-to="3"><span>04</span>Claim received</button></li>
+                    </ol>
+                    <div class="sl-nav">
+                      <button type="button" class="sl-prev" aria-label="Previous screen">←</button>
+                      <button type="button" class="sl-next" aria-label="Next screen">→</button>
+                    </div>
+                  </div>
+                  <span class="sl-bar" aria-hidden="true"><i></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec tl">
+        <div class="wrap grid">
+          <p class="lab">04 / Admin</p>
+          <div class="main rv">
+            <div class="tl-grid">
+              <div class="tl-c">
+                <span class="tag">Challenge</span>
+                <h3>Managing customers required a separate administrative experience</h3>
+                <p>The platform needed to support not only customers purchasing insurance but also administrators managing user information.</p>
+              </div>
+              <div class="tl-s">
+                <span class="tag">Solution</span>
+                <h3>A dedicated admin dashboard</h3>
+                <p>I contributed to an admin experience with a user management dashboard, giving administrators a dedicated interface for managing customer information separately from the customer-facing portal.</p>
+                <figure class="fig"><img src="../assets/images/admin-dashboard.jpeg" width="1400" height="707" loading="lazy" alt="KYC step asking who the policy is for, with saved profiles to choose from" /><figcaption>Admin user management dashboard</figcaption></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec">
+        <div class="wrap grid">
+          <p class="lab">More</p>
+          <div class="main rv">
+            <h2>Want the full story?</h2>
+            <p>The full case study covers the brand, the website, the purchase flow and the rest of the platform.</p>
+            <button type="button" class="go link" data-go="full">Read the full case study <span class="arrow" aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </section>
+      </div>
+      <div id="panel-full" role="tabpanel" aria-labelledby="tab-full" hidden>
+      <section id="overview" class="sec">
+        <div class="wrap grid">
+          <p class="lab">Overview</p>
+          <div class="main rv">
+            <h2>From concept to insurance platform</h2>
+            <p>
+              Beemagojima was never a single interface. It started as a product
+              concept and a brand, became a website and a mobile app, and then
+              grew into a full insurance platform with a customer portal, an
+              admin side and a claims flow.
+            </p>
+            <p>
+              I was involved across all of it, from the first brand direction to
+              the frontend code.
+            </p>
+            <ol class="phases">
+              <li>
+                <span>01</span><b>Concept &amp; Brand</b
+                ><i>Market study, logo, mascot</i>
+              </li>
+              <li>
+                <span>02</span><b>Digital Launch</b
+                ><i>Website, mobile app, guidelines, social</i>
+              </li>
+              <li>
+                <span>03</span><b>Insurance Platform</b
+                ><i>Web app, admin, purchase, payment</i>
+              </li>
+              <li>
+                <span>04</span><b>Claims &amp; Iteration</b
+                ><i>Three-step claims, flow improvements</i>
+              </li>
+            </ol>
+            <p class="bar">
+              Continuous testing and UX improvement ran through all four phases
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="phase1" class="sec">
+        <div class="wrap grid">
+          <p class="lab">01 / Concept &amp; Brand</p>
+          <div class="main rv">
+            <h2>Starting with the product itself</h2>
+            <p>
+              The first phase was about the market and the identity. Before any
+              screen existed, the product needed a name people could recognise
+              and a visual foundation to build on.
+            </p>
+            <p>
+              The brand guidelines explain the idea behind the logo. "Gojima"
+              means "in pocket", so a rectangle stands for the pocket, the
+              Nepali word for Beema is set in type, and the first letter is
+              reversed to sit inside it.
+            </p>
+            <div class="g2 mt">
+              <figure class="fig">
+                <div class="logo">
+                  <img
+                    class="px"
+                    src="../assets/images/logo-initial.png"
+                    width="105"
+                    height="65"
+                    alt="Original Beemagojima logo"
+                    style="width: 200px"
+                  />
+                </div>
+                <figcaption>Original logo</figcaption>
+              </figure>
+              <figure class="fig">
+                <div class="logo">
+                  <img
+                    src="../assets/images/logo-final.svg"
+                    width="943"
+                    height="632"
+                    alt="Redesigned Beemagojima logo"
+                    style="width: 200px"
+                  />
+                </div>
+                <figcaption>Redesigned logo</figcaption>
+              </figure>
+              <figure class="fig">
+                <div class="logo">
+                  <img
+                    class="px"
+                    src="../assets/images/Default_frog_mascot.png"
+                    alt="Original Beemagojima logo"
+                    style="width: 250px"
+                  />
+                </div>
+                <figcaption>Original mascot</figcaption>
+              </figure>
+              <figure class="fig">
+                <div class="logo">
+                  <img
+                    class="px"
+                    src="../assets/images//mascotThumbsUpPreview.png"
+                    alt="Original Beemagojima logo"
+                    style="width: 250px"
+                  />
+                </div>
+                <figcaption>Redesigned mascot</figcaption>
+              </figure>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section id="phase2" class="sec">
+        <div class="wrap grid">
+          <p class="lab">02 / Brand &amp; Digital Launch</p>
+          <div class="main rv">
+            <h2>Turning the concept into a digital presence</h2>
+            <p>
+              The next phase put the brand into real touchpoints: the website,
+              the mobile app, a redesigned logo and mascot, brand guidelines and
+              social media.
+            </p>
+            <ol class="chain">
+              <li>Brand</li>
+              <li>Website</li>
+              <li>Mobile app</li>
+              <li>Marketing</li>
+            </ol>
+            <div class="grid2 mt">
+              <div>
+                <figure class="fig">
+                  <img
+                    src="../assets/images/site-top.webp"
+                    width="1200"
+                    height="917"
+                    loading="lazy"
+                    alt="Top of the Beemagojima website with quote entry points for two wheeler, four wheeler, home and travel"
+                    style="
+                      aspect-ratio: 4/3;
+                      object-fit: cover;
+                      object-position: top;
+                    "
+                  />
+                  <figcaption>Website</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure class="fig">
+                  <img
+                  src="../assets/images/unnamed.webp"
+                  width="1200"
+                  height="737"
+                  loading="lazy"
+                  alt="Logo variations page from the brand guidelines"
+                />
+                  <figcaption>Mobile app</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="g2 mt">
+              <figure class="fig">
+                <img
+                  src="../assets/images/brand-variations.webp"
+                  width="1200"
+                  height="737"
+                  loading="lazy"
+                  alt="Logo variations page from the brand guidelines"
+                />
+                <figcaption>
+                  Logo variations, from the brand guidelines
+                </figcaption>
+              </figure>
+              <figure class="fig">
+                <img
+                  src="../assets/images/brand-social.webp"
+                  width="1200"
+                  height="737"
+                  loading="lazy"
+                  alt="Social media logo placements page from the brand guidelines"
+                />
+                <figcaption>Social media placements</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="research" class="sec">
+        <div class="wrap grid">
+          <p class="lab">Understanding</p>
+          <div class="main rv">
+            <h2>Understanding how people approach insurance</h2>
+            <p>
+              Insurance asks a lot of people. They meet unfamiliar terms,
+              compare options, hand over personal information and go through
+              several steps before anything is bought. That is the reason the UX
+              had to reduce complexity.
+            </p>
+            <p class="tags">
+              Understanding · Trust · Guidance · Decision-making · Convenience ·
+              Information requirements · Purchase friction
+            </p>
+            <div class="princ">
+              <div>
+                <span>01</span>
+                <h3>Make insurance easier to understand</h3>
+                <p>
+                  Plans sit side by side with the insurer, the coverage type and
+                  the price visible together, so the comparison happens on one
+                  screen.
+                </p>
+              </div>
+              <div>
+                <span>02</span>
+                <h3>Guide users through complex decisions</h3>
+                <p>
+                  Filters for insurer, coverage type, excess and vehicle details
+                  narrow the list, and each plan has its own details view.
+                </p>
+              </div>
+              <div>
+                <span>03</span>
+                <h3>Reduce unnecessary effort and repetition</h3>
+                <p>
+                  Vehicle details already entered stay visible next to the
+                  plans, and policyholders already added can be picked again.
+                </p>
+              </div>
+              <div>
+                <span>04</span>
+                <h3>Break complex tasks into manageable steps</h3>
+                <p>
+                  Purchase runs as a stepped flow with a progress bar, and
+                  claims are a three-step journey.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="platform" class="sec">
+        <div class="wrap grid">
+          <p class="lab">03 / Insurance Platform</p>
+          <div class="main rv">
+            <h2>Moving from a website to a complete insurance experience</h2>
+            <p>
+              The product then grew beyond the public website into a web
+              application where people could register, choose a policy, pay and
+              manage their insurance. It also needed an admin side for the team
+              running it.
+            </p>
+            <div class="lane">
+              <p>Customer</p>
+              <ol class="chain">
+                <li>Public website</li>
+                <li>Registration</li>
+                <li>Policy selection</li>
+                <li>Purchase</li>
+                <li>Payment</li>
+                <li>Dashboard</li>
+                <li>Claims</li>
+              </ol>
+            </div>
+            <div class="lane">
+              <p>Admin</p>
+              <ol class="chain">
+                <li>Admin</li>
+                <li>User management</li>
+                <li>Insurance / policy management</li>
+              </ol>
+            </div>
+            <h3 class="h3">Registration</h3>
+            <div class="grid2">
+              <div>
+                <figure class="fig">
+                  <img
+                    src="../assets/images/signin.webp"
+                    width="1400"
+                    height="731"
+                    loading="lazy"
+                    alt="Sign in screen with mobile number and password, a sign up button and Google sign-in"
+                  />
+                  <figcaption>Sign in and sign up entry</figcaption>
+                </figure>
+              </div>
+              <div>
+                <p>
+                  The entry point keeps one job: get the person in. Mobile
+                  number and password, a clear split between Login and Sign Up,
+                  a Google option, and support numbers for anyone who is stuck.
+                </p>
+                <p>
+                  The mascot and the three-word line carry the brand without
+                  taking space from the form.
+                </p>
+              </div>
+            </div>
+            <!-- <div class="mt">
+              <figure class="fig">
+                <div class="ph" style="aspect-ratio: 21/9">
+                  <div>
+                    <b>Placeholder</b><br />04_CUSTOMER_APP/registration.png
+                  </div>
+                </div>
+                <figcaption>Registration form</figcaption>
+              </figure>
+            </div> -->
+            <h3 class="h3">Choosing a policy</h3>
+            <p>
+              The plans page moves people from understanding the options to
+              picking one. Insurer, coverage type and price are readable at a
+              glance, coverage is shown as short tags, and View Details sits
+              next to Buy Now for anyone who wants more first.
+            </p>
+            <figure class="fig">
+              <img
+                src="../assets/images/plans.webp"
+                width="1400"
+                height="932"
+                loading="lazy"
+                alt="Available plans page with insurer filters, coverage type, excess, registration date, cubic capacity and vehicle value"
+              />
+              <figcaption>
+                Plan selection with filters and the vehicle details panel
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section id="purchase" class="sec">
+        <div class="wrap grid">
+          <p class="lab">Purchase &amp; payment</p>
+          <div class="main rv">
+            <h2>The purchase journey</h2>
+            <p>
+              Buying a policy means collecting a lot of information, so the flow
+              had to stay clear while asking for it. Payment is part of the same
+              journey and works as a real transaction, not a mock-up.
+            </p>
+            <div class="seq">
+              <div>
+                <figure class="fig">
+                  <img
+                    src="../assets/images/beemagojima-quote.webp"
+                    width="1400"
+                    height="731"
+                    loading="lazy"
+                    alt="Registration step"
+                    style="
+                      aspect-ratio: 16/10;
+                      object-fit: cover;
+                      object-position: top;
+                    "
+                  />
+                  <figcaption>01 Registration</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure class="fig">
+                  <img
+                    src="../assets/images/plans.webp"
+                    width="1400"
+                    height="932"
+                    loading="lazy"
+                    alt="Policy selection step"
+                    style="
+                      aspect-ratio: 16/10;
+                      object-fit: cover;
+                      object-position: top;
+                    "
+                  />
+                  <figcaption>02 Policy selection</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure class="fig">
+                  <img
+                    src="../assets/images/purchase-policyDetail.png"
+                    width="1400"
+                    height="707"
+                    loading="lazy"
+                    alt="KYC details step asking who the policy is for"
+                    style="
+                      aspect-ratio: 16/10;
+                      object-fit: cover;
+                      object-position: top left;
+                    "
+                  />
+                  <figcaption>03 User information</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure class="fig">
+                  <img
+                    src="../assets/images/signin.webp"
+                    width="1400"
+                    height="707"
+                    loading="lazy"
+                    alt="signup"
+                    style="
+                      aspect-ratio: 16/10;
+                      object-fit: cover;
+                      object-position: top left;
+                    "
+                  />
+                  <figcaption>04 Sign UP</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure class="fig">
+                  <img
+                    src="../assets/images/KYC.png"
+                    width="1400"
+                    height="707"
+                    loading="lazy"
+                    alt="KYC details step asking who the policy is for"
+                    style="
+                      aspect-ratio: 16/10;
+                      object-fit: cover;
+                      object-position: top left;
+                    "
+                  />
+                  <figcaption>05 KYC Details</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure class="fig">
+                  <img
+                    src="../assets/images/DetailComfirmattion.png"
+                    width="1400"
+                    height="707"
+                    loading="lazy"
+                    alt="Detai Confirmation"
+                    style="
+                      aspect-ratio: 16/10;
+                      object-fit: cover;
+                      object-position: top left;
+                    "
+                  />
+                  <figcaption>06 Confirmation</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="friction" class="sec">
+        <div class="wrap grid">
+          <p class="lab">Form friction</p>
+          <div class="main rv">
+            <h2>Reducing friction in complex forms</h2>
+            <p>
+              Insurance needs a lot of information from the user. In testing and
+              iteration, one source of friction kept coming up: being asked for
+              the same information in different parts of the experience.
+            </p>
+            <p>
+              The opportunity was not to remove required information. It was to
+              stop asking for what the system already had.
+            </p>
+            <div class="ba">
+              <div>
+                <h4>Before</h4>
+                <ol>
+                  <li>User enters information</li>
+                  <li>Moves to another part of the flow</li>
+                  <li>Asked for the same information again</li>
+                  <li>More effort</li>
+                  <li>More friction</li>
+                </ol>
+              </div>
+              <div class="after">
+                <h4>After</h4>
+                <ol>
+                  <li>User provides information once</li>
+                  <li>Information is reused where it makes sense</li>
+                  <li>Fewer unnecessary fields</li>
+                  <li>A shorter, clearer flow</li>
+                  <li>Less friction</li>
+                </ol>
+              </div>
+            </div>
+            <p class="pull">
+              Good UX is not always about removing steps. Sometimes it is about
+              removing repetition.
+            </p>
+            <h3 class="h3">
+              Designing around information users had already provided
+            </h3>
+            <p>
+              Reuse was applied across the platform to cut unnecessary fields
+              and effort. Two places where it is visible in the product:
+            </p>
+            <div class="g2 eq">
+              <figure class="fig">
+                <img
+                  src="../assets/images/beemagojima-quote.webp"
+                  width="1400"
+                  height="707"
+                  loading="lazy"
+                  alt="Basic vehicle details from Onboarding page"
+                />
+                <figcaption>
+                  Step 1 offers people already added to the account, with Add
+                  New and Search User
+                </figcaption>
+              </figure>
+              <figure class="fig">
+                <img
+                  src="../assets/images/plans.webp"
+                  width="1400"
+                  height="932"
+                  loading="lazy"
+                  alt="Plans page with the vehicle details panel on the right"
+                />
+                <figcaption>
+                  The plans page keeps the vehicle details already entered
+                  beside the plans
+                </figcaption>
+              </figure>
+            </div>
+            <div class="g2 mt eq">
+              <figure class="fig">
+                
+                  <img
+                  src="../assets/images/kyc.webp"
+                  width="1400"
+                  height="707"
+                  loading="lazy"
+                  alt="Previously added policyholders, an Add New card and Search User for existing users"
+                />
+                
+                <figcaption>Previously added policyholders, an Add New card and Search User for existing users</figcaption>
+              </figure>
+              <figure class="fig">
+                <img
+                  src="../assets/images/KYC.png"
+                  width="1400"
+                  height="707"
+                  loading="lazy"
+                  alt="Previously added policyholders, an Add New card and Search User for existing users"
+                />
+                <figcaption>Automatically fills in previously provided information in KYC form</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portal" class="sec">
+        <div class="wrap grid">
+          <p class="lab">Customer dashboard</p>
+          <div class="main rv">
+            <h2>A place to manage the policy after buying it</h2>
+            <div class="grid2 top">
+              <div>
+                <p>
+                  After a purchase, people need one place to understand and
+                  manage their insurance. The dashboard brings that together.
+                </p>
+                <ul class="list">
+                  <li>
+                    Summary tiles for total premium, purchased policies, pending
+                    policies and ongoing claims
+                  </li>
+                  <li>
+                    Quick actions: File a Claim, My Claims, My Policies, Expired
+                    Policies
+                  </li>
+                  <li>
+                    Popular products by vehicle type, as a shortcut to a new
+                    quote
+                  </li>
+                  <li>Monthly and total policy charts by insurer</li>
+                  <li>Recent policy purchases in a table</li>
+                  <li>A referral form</li>
+                </ul>
+              </div>
+              <div>
+                <figure class="fig">
+                  <img
+                    src="../assets/images/dashboard.webp"
+                    width="1100"
+                    height="1325"
+                    loading="lazy"
+                    alt="Customer dashboard with summary tiles, quick actions, product shortcuts, charts and recent purchases"
+                  />
+                  <figcaption>Customer dashboard</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section id="admin" class="sec">
+        <div class="wrap grid">
+          <p class="lab">Admin</p>
+          <div class="main rv">
+            <h2>Designing for the people behind the product</h2>
+            <p>
+              The platform also needed an admin experience, including a user
+              management dashboard. Customers and admins want different things,
+              so the two sides were designed separately.
+            </p>
+            <div class="lane">
+              <p>Customer</p>
+              <ol class="chain">
+                <li>Understand</li>
+                <li>Choose</li>
+                <li>Purchase</li>
+                <li>Manage</li>
+                <li>Claim</li>
+              </ol>
+            </div>
+            <div class="lane">
+              <p>Admin</p>
+              <ol class="chain">
+                <li>Monitor</li>
+                <li>Manage</li>
+                <li>Review</li>
+                <li>Support</li>
+              </ol>
+            </div>
+            <div class="g2 mt">
+              <figure class="fig">
+                <div class="ph" style="aspect-ratio: 16/10">
+                  <div><b>Placeholder</b><br />06_ADMIN/dashboard.png</div>
+                </div>
+                <figcaption>Admin dashboard</figcaption>
+              </figure>
+              <figure class="fig">
+                <div class="ph" style="aspect-ratio: 16/10">
+                  <div><b>Placeholder</b><br />06_ADMIN/users.png</div>
+                </div>
+                <figcaption>User management</figcaption>
+              </figure>
+              <figure class="fig">
+                <div class="ph" style="aspect-ratio: 16/10">
+                  <div><b>Placeholder</b><br />06_ADMIN/user-details.png</div>
+                </div>
+                <figcaption>User details</figcaption>
+              </figure>
+              <figure class="fig">
+                <div class="ph" style="aspect-ratio: 16/10">
+                  <div><b>Placeholder</b><br />06_ADMIN/management.png</div>
+                </div>
+                <figcaption>Management</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- <section id="claims" class="sec">
+        <div class="wrap grid">
+          <p class="lab">04 / Claims &amp; Improvement</p>
+          <div class="main rv">
+            <h2>Making claims a clearer process</h2>
+            <p>
+              Claims were designed as a three-step flow. The aim was a clear
+              sense of progress, no surprises about what is required, fewer ways
+              to make an error, and an unmistakable end state.
+            </p>
+            <div class="seq3">
+              <figure class="fig">
+                <div class="ph" style="aspect-ratio: 4/3">
+                  <div><b>Placeholder</b><br />07_CLAIMS/step-01.png</div>
+                </div>
+                <figcaption>Step 01</figcaption>
+              </figure>
+              <figure class="fig">
+                <div class="ph" style="aspect-ratio: 4/3">
+                  <div><b>Placeholder</b><br />07_CLAIMS/step-02.png</div>
+                </div>
+                <figcaption>Step 02</figcaption>
+              </figure>
+              <figure class="fig">
+                <div class="ph" style="aspect-ratio: 4/3">
+                  <div><b>Placeholder</b><br />07_CLAIMS/step-03.png</div>
+                </div>
+                <figcaption>Step 03</figcaption>
+              </figure>
+            </div>
+            <div class="mt">
+              <figure class="fig">
+                <div class="ph" style="aspect-ratio: 21/9">
+                  <div><b>Placeholder</b><br />07_CLAIMS/confirmation.png</div>
+                </div>
+                <figcaption>Confirmation</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- <section id="iteration" class="sec">
+        <div class="wrap grid">
+          <p class="lab">Ongoing</p>
+          <div class="main rv">
+            <h2>The product kept evolving after launch</h2>
+            <p>
+              I did not treat the process as a straight line. Testing carried on
+              throughout, and each round fed the next design change.
+            </p>
+            <ol class="chain loop">
+              <li>Design</li>
+              <li>Test</li>
+              <li>Observe</li>
+              <li>Identify friction</li>
+              <li>Iterate</li>
+              <li>Test again</li>
+            </ol>
+            <p>
+              Continuous user testing showed where flows were hard and where
+              they could be simpler. The clearest example was cutting form
+              fields by reusing information people had already given.
+            </p>
+            <div class="story">
+              <span>Iteration 01</span>
+              <dl>
+                <div>
+                  <dt>The problem</dt>
+                  <dd>
+                    Long forms asked for the same information in several places.
+                  </dd>
+                </div>
+                <div>
+                  <dt>The observation</dt>
+                  <dd>
+                    Repetition showed up as friction while testing the flows.
+                  </dd>
+                </div>
+                <div>
+                  <dt>The change</dt>
+                  <dd>
+                    Reused what users had already provided and removed fields
+                    that were no longer needed.
+                  </dd>
+                </div>
+                <div>
+                  <dt>The result</dt>
+                  <dd>
+                    Less repetition, fewer fields to fill in manually, and an
+                    easier flow to complete.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+            <div class="g2 mt">
+              <figure class="fig">
+                <div class="ph" style="aspect-ratio: 16/10">
+                  <div><b>Placeholder</b><br />09_PROCESS/iteration-01.png</div>
+                </div>
+                <figcaption>Iteration 02: add a second real example</figcaption>
+              </figure>
+              <figure class="fig">
+                <div class="ph" style="aspect-ratio: 16/10">
+                  <div><b>Placeholder</b><br />09_PROCESS/iteration-02.png</div>
+                </div>
+                <figcaption>Iteration 03: add a third real example</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section id="system" class="sec">
+        <div class="wrap grid">
+          <p class="lab">Visual language</p>
+          <div class="main rv">
+            <h2>The system behind the screens</h2>
+            <p>
+              Colours and typefaces come from the brand guidelines. They are
+              used the same way on the website, the app and the web application.
+            </p>
+            <ul class="sw">
+              <li style="--c: #17592e"><i></i>#17592E</li>
+              <li style="--c: #1d743b"><i></i>#1D743B</li>
+              <li style="--c: #228d46"><i></i>#228D46</li>
+              <li style="--c: #4eb965"><i></i>#4EB965</li>
+              <li style="--c: #c15d28"><i></i>#C15D28</li>
+              <li style="--c: #324549"><i></i>#324549</li>
+              <li style="--c: #727f83"><i></i>#727F83</li>
+            </ul>
+            <p class="tags">
+              Logo type: Nexa Book · Secondary: Mandu, Open Sans
+            </p>
+            <div class="g2 mt">
+              <figure class="fig">
+                <img
+                    src="../assets/images/brand-variations.webp"
+                    width="1100"
+                    height="1325"
+                    loading="lazy"
+                    alt="Logo variations"
+                  />
+                <figcaption>Logo variations</figcaption>
+              </figure>
+              <figure class="fig">
+                <img
+                    src="../assets/images/brand-social.jpg"
+                    width="1100"
+                    height="1325"
+                    loading="lazy"
+                    alt="Logo variations"
+                  />
+                <figcaption>Logo Placement</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="code" class="sec">
+        <div class="wrap grid">
+          <p class="lab">Design to code</p>
+          <div class="main rv">
+            <h2>From Figma to production</h2>
+            <p>
+              I worked closely with development and also built frontend
+              interfaces in HTML, CSS and JavaScript. That kept the shipped
+              product close to the design, and it taught me how design decisions
+              behave in a browser.
+            </p>
+            <ol class="chain">
+              <li>Figma</li>
+              <li>HTML / CSS / JavaScript</li>
+              <li>Responsive product</li>
+            </ol>
+            <p class="tags">
+              Responsive implementation · UI accuracy · Interactive states ·
+              Navigation · Animations · Forms · Cross-device behaviour
+            </p>
+            <div class="g2 mt">
+              <figure class="fig">
+                <img
+                    src="../assets/images/figma.png"
+                    width="1100"
+                    height="1325"
+                    loading="lazy"
+                    alt="Project in Figma"
+                  />
+                <figcaption>Figma</figcaption>
+              </figure>
+              <figure class="fig">
+                <img
+                    src="../assets/images/plans.webp"
+                    width="1100"
+                    height="1325"
+                    loading="lazy"
+                    alt="Project in Figma"
+                  />
+                <figcaption>Browser</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="eco" class="sec">
+        <div class="wrap grid">
+          <p class="lab">The whole picture</p>
+          <div class="main rv">
+            <h2>The complete Beemagojima ecosystem</h2>
+            <ol class="eco">
+              <li>Concept</li>
+              <li>Brand</li>
+              <li>Website</li>
+              <li>Mobile app</li>
+              <li>Customer portal</li>
+              <li>Policy purchase</li>
+              <li>Payment</li>
+              <li>Customer dashboard</li>
+              <li>Claims</li>
+              <li>Admin experience</li>
+              <li>Continuous improvement</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section id="outcome" class="sec">
+        <div class="wrap grid">
+          <p class="lab">Outcome</p>
+          <div class="main rv">
+            <h2>From an insurance concept to a connected platform</h2>
+            <p class="pull">
+              Beemagojima grew from an insurance concept and brand into a
+              connected digital insurance ecosystem covering discovery,
+              purchase, policy management and claims.
+            </p>
+            <p>My contribution:</p>
+            <ul class="list cols">
+              <li>Product and UX design</li>
+              <li>Brand development</li>
+              <li>Website design</li>
+              <li>Mobile experience</li>
+              <li>Customer portal</li>
+              <li>Admin experience</li>
+              <li>Insurance purchase flow</li>
+              <li>Payment journey</li>
+              <li>Claims flow</li>
+              <li>UX iteration</li>
+              <li>Frontend implementation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="reflection" class="sec">
+        <div class="wrap grid">
+          <p class="lab">Reflection</p>
+          <div class="main rv">
+            <h2>What I took from it</h2>
+            <div class="refl">
+              <p>
+                <b>Complex products can feel simple.</b> Most of the purchase
+                flow came down to deciding when to ask for each piece of
+                information.
+              </p>
+              <p>
+                <b>Reusing information removes a lot of friction.</b> It was
+                less work than I expected and made a bigger difference than most
+                visual changes.
+              </p>
+              <p>
+                <b>Testing shows what static designs hide.</b> Some problems
+                only appeared once people moved through a whole flow.
+              </p>
+              <p>
+                <b>Design carries on after launch.</b> The product kept
+                changing, and so did my view of what was done.
+              </p>
+              <p>
+                <b>Writing the frontend changed how I design.</b> Moving between
+                Figma and code made me more careful about states, spacing and
+                what happens on a small screen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec" id="gallery">
+        <div class="wrap">
+          <div class="stack-head">
+            <p class="lab" style="position: static">Selected screens</p>
+            <p class="stack-hint">Scroll to flip through · 06 screens</p>
+          </div>
+          <ol class="stack" aria-label="Selected screens">
+            <li class="stack-card" style="--i: 0; --r: 1200/917">
+              <img src="../assets/images/site-top.webp" width="1200" height="917" loading="lazy" alt="Website home screen of the Beemagojima platform" />
+              <span class="sc-chip"><b>01</b> / 06 · Website home</span>
+            </li>
+            <li class="stack-card" style="--i: 1; --r: 1400/932">
+              <img src="../assets/images/beemagojima-quote.webp" width="1400" height="932" loading="lazy" alt="Instant quote screen of the Beemagojima platform" />
+              <span class="sc-chip"><b>02</b> / 06 · Instant quote</span>
+            </li>
+            <li class="stack-card" style="--i: 2; --r: 1400/932">
+              <img src="../assets/images/plans.webp" width="1400" height="932" loading="lazy" alt="Plan comparison screen of the Beemagojima platform" />
+              <span class="sc-chip"><b>03</b> / 06 · Plan comparison</span>
+            </li>
+            <li class="stack-card" style="--i: 3; --r: 1400/731">
+              <img src="../assets/images/signin.webp" width="1400" height="731" loading="lazy" alt="Sign in screen of the Beemagojima platform" />
+              <span class="sc-chip"><b>04</b> / 06 · Sign in</span>
+            </li>
+            <li class="stack-card" style="--i: 4; --r: 1400/707">
+              <img src="../assets/images/kyc.webp" width="1400" height="707" loading="lazy" alt="KYC details screen of the Beemagojima platform" />
+              <span class="sc-chip"><b>05</b> / 06 · KYC details</span>
+            </li>
+            <li class="stack-card" style="--i: 5; --r: 1100/1325">
+              <img src="../assets/images/dashboard.webp" width="1100" height="1325" loading="lazy" alt="Policy dashboard screen of the Beemagojima platform" />
+              <span class="sc-chip"><b>06</b> / 06 · Policy dashboard</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+      </div>
+    </main>
+    <section class="next">
+      <div class="wrap">
+        <a class="prev link" href="../index.html#work">← All work</a
+        ><div class="nx soon" data-soon>
+          <span>Next case study</span><b>SynergyAI</b>
+          <i>AI-integrated CRM software</i>
+          <p class="soon-note">Case study coming soon</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrap">
+        <div>
+          <b>ANUPA KAPRI</b><br />Product Designer · UX Designer<br />Gothenburg,
+          Sweden
+        </div>
+        <div>
+          <a
+            class="link"
+            href="https://linkedin.com/in/anupakapri"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          &nbsp; <a class="link" href="mailto:anupakapri.ak@gmail.com">Email</a
+          ><br />© 2026 Anupa Kapri
+        </div>
+      </div>
+    </footer>
+    <script>
+      (function () {
+        var h = document.querySelector("header"),
+          b = document.querySelector(".menu-btn"),
+          m = document.getElementById("menu");
+        function s() {
+          h.classList.toggle("scrolled", scrollY > 8);
+        }
+        s();
+        addEventListener("scroll", s, { passive: true });
+        b.addEventListener("click", function () {
+          var o = m.classList.toggle("open");
+          b.setAttribute("aria-expanded", o);
+        });
+        var els = document.querySelectorAll(".rv");
+        if (!("IntersectionObserver" in window)) {
+          els.forEach(function (e) {
+            e.classList.add("in");
+          });
+          return;
+        }
+        var io = new IntersectionObserver(
+          function (es) {
+            es.forEach(function (x) {
+              if (x.isIntersecting) {
+                x.target.classList.add("in");
+                io.unobserve(x.target);
+              }
+            });
+          },
+          { rootMargin: "0px 0px -6% 0px" },
+        );
+        els.forEach(function (e) {
+          io.observe(e);
+        });
+      })();
+    </script>
+    <script src="../assets/js/vendor/gsap.min.js" defer></script>
+    <script src="../assets/js/vendor/ScrollTrigger.min.js" defer></script>
+    <script src="../assets/js/vendor/SplitText.min.js" defer></script>
+    <script src="../assets/js/vendor/lenis.min.js" defer></script>
+    <script src="../assets/js/motion.js" defer></script>
+      <script src="../assets/js/coming-soon.js" defer></script>
+    <script src="../assets/js/case-tabs.js" defer></script>
+  </body>
+</html>
