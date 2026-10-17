@@ -1,501 +1,967 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anupa Kapri — UI/UX Designer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link href="./assets/css/style.css" rel="stylesheet">
-</head>
-<body>
-
-<!-- Custom Cursor -->
-<div class="cursor-dot" id="cursorDot"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-logo">Anupa<span>.</span></a>
-  <ul class="nav-links">
-    <li><a href="#work">Work</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#connect">Connect</a></li>
-  </ul>
-  <a href="mailto:anupakapri.ak@gmail.com" class="nav-cta">Hire me</a>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-bg-text">Design</div>
-
-  <div class="hero-eyebrow">Based in Gothenburg, Sweden — Open to opportunities</div>
-
-  <h1 class="hero-heading">
-    Designing interfaces<br>
-    that <em>people</em> find<br>
-    <span class="line-indent">effortless.</span>
-  </h1>
-
-  <div class="hero-sub-row">
-    <p class="hero-desc">
-      I'm <strong>Anupa Kapri</strong>, a UI/UX Developer crafting responsive, accessible, 
-      and performance-driven digital experiences — from research and wireframes to pixel-perfect code.
-    </p>
-    <div class="hero-actions">
-      <a href="#work" class="btn-primary">
-        View Work
-        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-          <path d="M7 17l9.2-9.2M17 17V7H7"/>
-        </svg>
-      </a>
-      <a href="#connect" class="btn-secondary">Let's talk</a>
-    </div>
-  </div>
-
-  <!-- Floating badges -->
-  <div class="hero-badge">
-    <div class="hero-badge-icon">✦</div>
-    <div class="hero-badge-text">
-      <div class="title">5+ Years Experience</div>
-      <div class="sub">UI/UX Design & Front-End Dev</div>
-    </div>
-  </div>
-
-  <div class="hero-badge-2">
-    <div class="dot"></div>
-    <span>Open to opportunities</span>
-  </div>
-
-  <div class="hero-scroll-hint">Scroll to explore</div>
-
-  <div class="hero-stats">
-    <div class="hero-stat">
-      <span class="num">8+</span>
-      <span class="label">Projects</span>
-    </div>
-    <div class="hero-stat">
-      <span class="num">3</span>
-      <span class="label">Companies</span>
-    </div>
-    <div class="hero-stat">
-      <span class="num">5yr</span>
-      <span class="label">Experience</span>
-    </div>
-  </div>
-</section>
-
-<!-- MARQUEE -->
-<div class="marquee-section">
-  <div class="marquee-track" id="marqueeTrack">
-    <span class="marquee-item">UI Design <span class="dot-sep"></span></span>
-    <span class="marquee-item">UX Research <span class="dot-sep"></span></span>
-    <span class="marquee-item">Figma <span class="dot-sep"></span></span>
-    <span class="marquee-item">HTML · CSS · JS <span class="dot-sep"></span></span>
-    <span class="marquee-item">React <span class="dot-sep"></span></span>
-    <span class="marquee-item">Tailwind CSS <span class="dot-sep"></span></span>
-    <span class="marquee-item">Prototyping <span class="dot-sep"></span></span>
-    <span class="marquee-item">Wireframing <span class="dot-sep"></span></span>
-    <span class="marquee-item">Adobe XD <span class="dot-sep"></span></span>
-    <span class="marquee-item">SCSS · SASS <span class="dot-sep"></span></span>
-    <span class="marquee-item">UI Design <span class="dot-sep"></span></span>
-    <span class="marquee-item">UX Research <span class="dot-sep"></span></span>
-    <span class="marquee-item">Figma <span class="dot-sep"></span></span>
-    <span class="marquee-item">HTML · CSS · JS <span class="dot-sep"></span></span>
-    <span class="marquee-item">React <span class="dot-sep"></span></span>
-    <span class="marquee-item">Tailwind CSS <span class="dot-sep"></span></span>
-    <span class="marquee-item">Prototyping <span class="dot-sep"></span></span>
-    <span class="marquee-item">Wireframing <span class="dot-sep"></span></span>
-    <span class="marquee-item">Adobe XD <span class="dot-sep"></span></span>
-    <span class="marquee-item">SCSS · SASS <span class="dot-sep"></span></span>
-  </div>
-</div>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-label">About me</div>
-  <h2 class="section-title">Designer who codes,<br>developer who <em>designs</em></h2>
-
-  <div class="about-grid">
-    <!-- Left -->
-    <div class="about-left">
-      <p class="bio">
-        Based in <strong>Gothenburg, Sweden</strong>, I'm a UI/UX Developer with over 5 years of experience 
-        turning complex requirements into <strong>responsive, accessible, and performant</strong> digital products. 
-        I move fluidly between Figma and a code editor.
-      </p>
-      <p class="bio">
-        From insurance platforms and CRM systems to earbuds brands, I've shipped products that 
-        are <strong>both beautiful and functional</strong> — always grounded in user needs, 
-        business goals, and clean front-end execution.
-      </p>
-
-      <!-- Timeline -->
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-year">2024–Now</div>
-          <div class="timeline-content">
-            <div class="role">Senior Full Stack Designer</div>
-            <div class="company">Neo Assure Pvt. Ltd. — Sanepa, Lalitpur</div>
-            <div class="detail">Transforms UX/UI mockups into production-ready web pages; mentors junior designers; leads QA and documentation across development stages.</div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-year">2019–2024</div>
-          <div class="timeline-content">
-            <div class="role">UI/UX Developer</div>
-            <div class="company">Neo Software Pvt. Ltd. — Bhanimandal, Lalitpur</div>
-            <div class="detail">Brought UX/UI mockups to life with HTML, CSS &amp; JavaScript; built responsive, accessible websites; led feature development pre- and post-deployment.</div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-year">May–Aug 2019</div>
-          <div class="timeline-content">
-            <div class="role">UI/UX Developer</div>
-            <div class="company">Podamibe Nepal Pvt. Ltd. — Kathmandu</div>
-            <div class="detail">Designed UX/UI mockups with the design team; implemented layouts in HTML &amp; CSS; tested responsiveness across multiple devices.</div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-year">Education</div>
-          <div class="timeline-content">
-            <div class="role">Masters in Information Technology</div>
-            <div class="company">Islington College, Nepal · B.I.M. — St. Xavier's College</div>
-            <div class="detail">Dual academic foundation in technology and information management, applied directly to product and interface design.</div>
-          </div>
-        </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anupa Kapri — Product Designer · UX Designer</title>
+    <meta
+      name="description"
+      content="Product Designer with 6+ years of experience across UX, UI and frontend. Insurance platforms, CRM software and consumer products. Based in Gothenburg, Sweden."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Anupa Kapri — Product Designer · UX Designer"
+    />
+    <meta
+      property="og:description"
+      content="I design digital products from early user flows to production. Selected work: Beemagojima, SynergyAI, NeoOne."
+    />
+    <meta property="og:url" content="https://anupakapri.com.np" />
+    <meta
+      property="og:image"
+      content="https://anupakapri.com.np/assets/images/beemagojima-site-full.webp"
+    />
+    <meta name="theme-color" content="#F4F4F0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/motion.css">
+    <script>
+      /* Hide animated elements until motion.js takes over; fail open after 3s. */
+      (function (d) {
+        if (matchMedia("(prefers-reduced-motion:reduce)").matches) return;
+        d.classList.add("js-motion");
+        try {
+          if (!sessionStorage.getItem("ak-intro")) {
+            d.classList.add("intro-on");
+            sessionStorage.setItem("ak-intro", "1");
+          }
+        } catch (e) {}
+        setTimeout(function () {
+          if (!window.__motionReady) d.classList.remove("js-motion");
+        }, 3000);
+      })(document.documentElement);
+    </script>
+  </head>
+  <body class="page-home">
+    <div class="intro" aria-hidden="true">
+      <div class="i-top"><span>Portfolio ©2026</span><span>Product Designer · UX Designer</span></div>
+      <div class="i-bot">
+        <div class="i-name">Anupa<br />Kapri</div>
+        <div class="i-count">000</div>
       </div>
+      <span class="i-bar"></span>
     </div>
-
-    <!-- Right — photo card -->
-    <div>
-      <div class="about-photo-card fade-in">
-        <div class="avatar-circle">AK</div>
-        <div class="name-label">Anupa Kapri</div>
-        <div class="role-label">UI/UX Developer · Gothenburg, Sweden</div>
-        <div class="tag-row">
-          <span class="tag">UI/UX Design</span>
-          <span class="tag">Front-End Dev</span>
-          <span class="tag">Figma</span>
-          <span class="tag">React</span>
-        </div>
+    <header id="top">
+      <div class="wrap">
+        <a class="brand" href="#top" aria-label="Anupa Kapri, back to top">ANUPA KAPRI</a>
+        <nav aria-label="Main">
+          <button class="menu-btn" aria-expanded="false" aria-controls="menu">
+            Menu
+          </button>
+          <ul id="menu">
+            <li><a class="link" href="#work">Work</a></li>
+            <li><a class="link" href="#about">About</a></li>
+            <li><a class="link" href="#experience">Resume</a></li>
+            <li><a class="link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </div>
-</section>
+      <span class="progress" aria-hidden="true"></span>
+    </header>
 
-<!-- WORKS -->
-<section id="work" class="works-section">
-  <div class="works-header">
-    <div>
-      <div class="section-label">Featured work</div>
-      <h2 class="section-title">Selected<em> Projects</em></h2>
-    </div>
-    <a href="#" class="btn-secondary" style="flex-shrink:0">View all work →</a>
-  </div>
-
-  <div class="bento-grid">
-
-    <!-- Card 1 — large -->
-    <div class="bento-card bento-card-1">
-      <div class="bento-visual card-1-bg">
-        <div class="card-1-mockup">
-          <div class="mock-header">
-            <div class="mock-dot" style="background:#ff5f57"></div>
-            <div class="mock-dot" style="background:#febc2e"></div>
-            <div class="mock-dot" style="background:#28c840"></div>
-          </div>
-          <div class="mock-body">
-            <div class="mock-row" style="background:rgba(196,151,90,0.3); width:45%; height:12px; margin-bottom:14px;"></div>
-            <div class="mock-row w80"></div>
-            <div class="mock-row w60"></div>
-            <div class="mock-row w40"></div>
-            <div class="mock-card-grid">
-              <div class="mock-mini-card"></div>
-              <div class="mock-mini-card" style="background:rgba(196,151,90,0.12)"></div>
-              <div class="mock-mini-card" style="background:rgba(255,255,255,0.04)"></div>
-              <div class="mock-mini-card"></div>
-            </div>
-            <div class="mock-row" style="margin-top:12px; width:55%; height:6px;"></div>
-            <div class="mock-row w80" style="margin-top:4px;"></div>
-          </div>
-        </div>
-      </div>
-      <div class="bento-card-inner" style="background:linear-gradient(to top, rgba(10,10,20,0.95) 0%, rgba(10,10,20,0.4) 50%, transparent 100%); z-index:1;">
-        <div class="bento-label text-white" style="opacity:0.5">01 — Insurance · Nepal</div>
-        <div class="bento-name text-white">Beemagojima</div>
-        <div class="bento-desc text-white" style="opacity:0.65">User-friendly website for a modern, app-first insurance solution — from wireframes and Figma mockups to a fully responsive HTML/CSS/JS frontend with animations and interactive menus.</div>
-        <div class="bento-meta">
-          <div class="bento-tags">
-            <span class="bento-tag tag-light">UX/UI Design</span>
-            <span class="bento-tag tag-light">Front-End Dev</span>
-            <span class="bento-tag tag-light">Figma</span>
-          </div>
-          <a href="https://beemagojima.com.np/" target="_blank" class="bento-arrow">
-            <svg fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.5"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="bento-card bento-card-2">
-      <div class="bento-visual card-2-bg">
-        <div class="card-2-illustration">
-          <div class="pill-bar">
-            <div class="pill-dot" style="background:#4ade80"></div>
-            <span>Progress</span>
-            <div class="pill-fill" style=""><div style="width:72%;height:100%;background:var(--accent);border-radius:2px;"></div></div>
-            <span>72%</span>
-          </div>
-          <div class="pill-bar">
-            <div class="pill-dot" style="background:#60a5fa"></div>
-            <span>Tasks</span>
-            <div class="pill-fill"><div style="width:45%;height:100%;background:#93c5fd;border-radius:2px;"></div></div>
-            <span>45%</span>
-          </div>
-          <div class="pill-bar">
-            <div class="pill-dot" style="background:#f472b6"></div>
-            <span>Goals</span>
-            <div class="pill-fill"><div style="width:88%;height:100%;background:#f9a8d4;border-radius:2px;"></div></div>
-            <span>88%</span>
-          </div>
-          <div style="display:flex;gap:8px;margin-top:4px;">
-            <div style="flex:1;height:52px;background:white;border-radius:10px;border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;">
-              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="var(--accent)" stroke-width="2"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-            </div>
-            <div style="flex:2;height:52px;background:var(--accent);border-radius:10px;display:flex;align-items:center;justify-content:center;">
-              <span style="font-family:var(--sans);font-size:11px;font-weight:700;color:white;letter-spacing:0.05em;text-transform:uppercase;">View Report</span>
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-pin">
+          <div class="wrap hero-copy">
+            <!-- <p class="status">
+              <span class="dot" aria-hidden="true"></span>Open to Product &amp; UX roles in Sweden and Europe
+            </p> -->
+            <h1>I build more than interfaces.</h1>
+            <!-- <h1>I shape what a brand becomes.</h1> -->
+            <p class="life-lead">I shape what a brand becomes.</p>
+            <p class="lead">
+              <!-- Product Designer with 6+ years of experience across UX, UI, and frontend development. I work from research and user flows through high-fidelity design and production. -->
+               Hi, I am Anupa. A Product Designer with 6+ years of experience across UX, UI, and frontend development. I rethink, redesign, and build digital experiences that turn business ideas into products people love to use. 
+            </p>
+            <div class="ctas">
+              <a class="btn primary" href="#work"
+                >View selected work
+                <span class="arrow" aria-hidden="true">→</span></a
+              >
+              <a class="btn ghost" href="#about">About me</a>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="bento-card-inner" style="background:linear-gradient(to top, rgba(245,240,235,0.98) 30%, rgba(245,240,235,0.5) 65%, transparent 100%); z-index:1;">
-        <div class="bento-label text-dark" style="opacity:0.4">02 — Consumer Brand · Nepal</div>
-        <div class="bento-name text-dark">NeoOne</div>
-        <div class="bento-desc text-dark" style="opacity:0.6">Modern website for a Nepal-based earbuds distribution brand — visual hierarchy, color schemes, typography, and responsive animations built from scratch.</div>
-        <div class="bento-meta">
-          <div class="bento-tags">
-            <span class="bento-tag tag-accent">Web Design</span>
-            <span class="bento-tag tag-accent">JavaScript</span>
-          </div>
-          <a href="https://neo-one.com.np/" target="_blank" class="bento-arrow bento-arrow-dark">
-            <svg fill="none" viewBox="0 0 24 24" stroke="var(--text-primary)" stroke-width="2.5"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
 
-    <!-- Card 3 -->
-    <div class="bento-card bento-card-3">
-      <div class="bento-visual card-3-bg">
-        <div class="card-3-circles">
-          <div class="big-circle"></div>
-          <div class="big-circle-2"></div>
-          <div class="center-circle">
-            <svg fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2">
-              <path d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zM14 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"/>
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div class="bento-card-inner" style="background:linear-gradient(to top, rgba(13,13,13,0.97) 0%, rgba(13,13,13,0.5) 55%, transparent 100%); z-index:1;">
-        <div class="bento-label text-white" style="opacity:0.4">03 — Insurance · Web App</div>
-        <div class="bento-name text-white" style="font-size:1.15rem;">Beemagojima Web App</div>
-        <div class="bento-desc text-white" style="opacity:0.55; font-size:0.9rem; margin-bottom:0.8rem;">Customer Portal for insurance policy management — multi-step forms, admin dashboards, and actionable navigation for end-to-end policy lifecycle.</div>
-        <div class="bento-meta">
-          <div class="bento-tags">
-            <span class="bento-tag tag-light">Admin Panel</span>
-            <span class="bento-tag tag-light">Dashboards</span>
-          </div>
-          <a href="https://app.beemagojima.com.np/PremimumCalculation/GetAQuote?categoryId=1&vehicleName=motorcycle" target="_blank" class="bento-arrow">
-            <svg fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.5"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="bento-card bento-card-4">
-      <div class="bento-visual card-4-bg">
-        <div class="card-4-type">UX</div>
-      </div>
-      <div class="bento-card-inner" style="background:linear-gradient(to top, rgba(240,235,227,0.98) 30%, rgba(240,235,227,0.5) 65%, transparent 100%); z-index:1;">
-        <div class="bento-label text-dark" style="opacity:0.4">04 — AI · CRM Software</div>
-        <div class="bento-name text-dark" style="font-size:1.15rem;">SynergyAI</div>
-        <div class="bento-desc text-dark" style="opacity:0.6; font-size:0.9rem; margin-bottom:0.8rem;">AI-integrated CRM workflow — leads, inventory, invoices, and smart forecasting features in one centralized platform.</div>
-        <div class="bento-meta">
-          <div class="bento-tags">
-            <span class="bento-tag tag-accent">AI Features</span>
-          </div>
-          <div class="bento-arrow bento-arrow-dark">
-            <svg fill="none" viewBox="0 0 24 24" stroke="var(--text-primary)" stroke-width="2.5"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 5 — accent -->
-    <div class="bento-card bento-card-5" style="background: var(--accent); border:none;">
-      <div class="bento-visual">
-        <div class="card-1-mockup">
-          <div class="mock-header">
-            <div class="mock-dot" style="background:#ff5f57"></div>
-            <div class="mock-dot" style="background:#febc2e"></div>
-            <div class="mock-dot" style="background:#28c840"></div>
-          </div>
-          <div class="mock-body">
-            <div class="mock-row" style="background:rgba(196,151,90,0.3); width:45%; height:12px; margin-bottom:14px;"></div>
-            <div class="mock-row w80"></div>
-            <div class="mock-row w60"></div>
-            <div class="mock-row w40"></div>
-            <div class="mock-card-grid">
-              <div class="mock-mini-card"></div>
-              <div class="mock-mini-card" style="background:rgba(196,151,90,0.12)"></div>
-              <div class="mock-mini-card" style="background:rgba(255,255,255,0.04)"></div>
-              <div class="mock-mini-card"></div>
+          <div
+            class="hero-art"
+            role="img"
+            aria-label="Illustration of Anupa at her desk: first sketching wireframes on a drawing tablet, then the same screen built in code with a live preview"
+          >
+            <div class="ha-stage" aria-hidden="true">
+              <img class="ha-design" src="assets/images/hero-design.webp" width="1376" height="768" alt="" fetchpriority="high" />
+              <div class="ha-build">
+                <img src="assets/images/hero-build.webp" width="1376" height="768" alt="" />
+              </div>
+              <span class="ha-sel">
+                <i class="h tl"></i><i class="h tr"></i><i class="h bl"></i><i class="h br"></i>
+                <span class="ha-sel-l"><b class="m-d">Frame 01 · Wireframe</b><b class="m-b">localhost · live preview</b></span>
+              </span>
+              <span class="ha-line"><span class="ha-handle"><i>Design</i><i>Build</i></span></span>
             </div>
-            <div class="mock-row" style="margin-top:12px; width:55%; height:6px;"></div>
-            <div class="mock-row w80" style="margin-top:4px;"></div>
+          </div>
+
+          <div class="wrap hero-foot" aria-hidden="true">
+            <p class="hf-mode">
+              <span class="m-d"><b>01</b> Design <em>flows, wireframes, prototypes</em></span>
+              <span class="m-b"><b>02</b> Build <em>HTML, CSS, JavaScript</em></span>
+            </p>
           </div>
         </div>
-      </div>
-      <div class="card-5-inner">
+      </section>
+
+      <section id="work" class="work">
+        <div class="wk-pin">
+          <div class="wrap wk-bar">
+            <h2>Selected work <sup>03</sup></h2>
+            <p class="wk-lead">A selection of products and digital experiences I've designed and built.</p>
+            <div class="wk-prog" aria-hidden="true">
+              <span class="wk-count"><b>01</b> / 03</span>
+              <span class="wk-track"><i></i></span>
+            </div>
+          </div>
+          <div class="wk-viewport">
+            <div class="wk-rail">
+              <article class="wk">
+                <div class="wrap wk-in">
+                  <div class="wk-txt">
+                    <p class="wk-meta">Digital insurance platform</p>
+                    <h3>Beemagojima</h3>
+                    <p class="wk-scope">Website · Customer portal · Admin</p>
+                    <p class="wk-desc">Designing a simpler way to buy, manage, and claim insurance online.</p>
+                    <dl class="wk-facts">
+                    <div><dt>Website</dt><dd>Discovery, wireframes, Figma prototypes, responsive frontend</dd></div>
+                    <div><dt>Portal</dt><dd>Multi-step forms with contextual validation</dd></div>
+                    <div><dt>Admin</dt><dd>Dashboards for users, policies and claims</dd></div>
+                    </dl>
+                    <div class="links">
+                  <a class="cs link stretch" href="work/beemagojima.html">View case study <span class="arrow" aria-hidden="true">→</span></a>
+                  <a class="live link" href="https://beemagojima.com.np/" target="_blank" rel="noopener">Visit live site <span class="arrow" aria-hidden="true">↗</span></a>
+                    </div>
+                  </div>
+                  <div class="wk-vis">
+                    <div class="wk-sel">
+                      <i class="h tl"></i><i class="h tr"></i><i class="h bl"></i><i class="h br"></i>
+                      <span class="wk-sel-l">Website → Portal · 5 screens</span>
+                      <div
+                        class="app quote"
+                        role="img"
+                        aria-label="Animated walkthrough of the Beemagojima platform: the marketing website scrolling through, then the customer portal from quote form to plan selection, details, and the purchased policy page"
+                      >
+                        <div class="bar" aria-hidden="true">
+                          <i></i><i></i><i></i><span>beemagojima.com.np</span>
+                        </div>
+                        <div class="stage" aria-hidden="true">
+                          <div class="scr s0" data-url="beemagojima.com.np">
+                            <img
+                              src="assets/images/beemagojima-site-full.webp"
+                              width="1100"
+                              height="3729"
+                              alt=""
+                            /><span class="hit"></span>
+                          </div>
+                          <div class="scr s1" data-url="app.beemagojima.com.np">
+                            <img
+                              src="assets/images/beemagojima-quote.webp"
+                              width="1386"
+                              height="970"
+                              alt=""
+                            /><span class="hit"></span>
+                          </div>
+                          <div class="scr s2 ph" data-url="app.beemagojima.com.np">
+                            <div>
+                              <h4>Choose your plan</h4>
+                              <p class="sub">Compare plans for your vehicle</p>
+                            </div>
+                            <div class="plans">
+                              <div class="plan">
+                                <b>Plan A</b>
+                                <div class="ln"></div>
+                                <div class="ln w"></div>
+                                <div class="ln l"></div>
+                              </div>
+                              <div class="plan sel">
+                                <b>Plan B</b>
+                                <div class="ln"></div>
+                                <div class="ln w"></div>
+                                <div class="ln l"></div>
+                              </div>
+                              <div class="plan">
+                                <b>Plan C</b>
+                                <div class="ln"></div>
+                                <div class="ln w"></div>
+                                <div class="ln l"></div>
+                              </div>
+                            </div>
+                            <span class="gbtn hit">Buy this plan</span>
+                          </div>
+                          <div class="scr s3 ph" data-url="app.beemagojima.com.np">
+                            <div class="crumbs">
+                              <span class="d">Plan ✓</span
+                              ><span class="c">Details</span><span>Payment</span>
+                            </div>
+                            <div class="ph2">
+                              <div class="fs">
+                                <div class="fld">
+                                  <span>Full name</span>
+                                  <div></div>
+                                </div>
+                                <div class="fld v">
+                                  <span>Mobile number</span>
+                                  <div><i class="ck">✓</i></div>
+                                </div>
+                                <div class="fld">
+                                  <span>Email</span>
+                                  <div></div>
+                                </div>
+                              </div>
+                              <div class="sum">
+                                <b>Summary</b>
+                                <div class="ln"></div>
+                                <div class="ln w"></div>
+                                <div class="ln l"></div>
+                              </div>
+                            </div>
+                            <span class="gbtn hit">Continue to payment</span>
+                          </div>
+                          <div class="scr s4" data-url="app.beemagojima.com.np">
+                            <img
+                              src="assets/images/beemagojima-portal.webp"
+                              width="1060"
+                              height="1204"
+                              alt=""
+                            />
+                          </div>
+                          <div class="cur">
+                            <svg width="22" height="22" viewBox="0 0 22 22">
+                              <path
+                                d="M3 2l15 8-6.5 1.8L8.4 18z"
+                                fill="#1d1e22"
+                                stroke="#fff"
+                                stroke-width="1.5"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <ol class="steps">
+                          <li>Website</li>
+                          <li>Quote</li>
+                          <li>Plans</li>
+                          <li>Details</li>
+                          <li>Policy</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="wk soon" data-soon>
+                <div class="wrap wk-in">
+                  <div class="wk-txt">
+                    <p class="wk-meta">Consumer / e-commerce</p>
+                    <h3>NeoOne</h3>
+                    <p class="wk-scope">Website · Product pages · Gallery</p>
+                    <p class="wk-desc">A modern digital experience for a Nepal-based earbuds distribution brand.</p>
+                    <dl class="wk-facts">
+                    <div><dt>Design</dt><dd>Wireframes, Figma mockups, hierarchy, colour, type</dd></div>
+                    <div><dt>Built with</dt><dd>Responsive HTML, CSS, JavaScript, sliders</dd></div>
+                    </dl>
+                    <div class="links">
+                  <a class="live link" href="https://neo-one.com.np/" target="_blank" rel="noopener">Visit live site <span class="arrow" aria-hidden="true">↗</span></a>
+                  <span class="soon-note">Case study coming soon</span>
+                    </div>
+                  </div>
+                  <div class="wk-vis">
+                    <div class="wk-sel">
+                      <i class="h tl"></i><i class="h tr"></i><i class="h bl"></i><i class="h br"></i>
+                      <span class="wk-sel-l">E-commerce · 5 screens</span>
+                      <div
+                        class="app neo"
+                        role="img"
+                        aria-label="Animated walkthrough of the NeoOne website: home page, then the PureBeats Move product page with image gallery, thumbnails and colour switch"
+                      >
+                        <div class="bar" aria-hidden="true">
+                          <i></i><i></i><i></i><span>neo-one.com.np</span>
+                        </div>
+                        <div class="stage" aria-hidden="true">
+                          <div class="scr n0">
+                            <img
+                              src="assets/images/neo-home.webp"
+                              width="1600"
+                              height="800"
+                              alt=""
+                            /><span
+                              class="hit"
+                              style="
+                                left: 86.4%;
+                                top: 12.6%;
+                                width: 7.5%;
+                                height: 4.3%;
+                              "
+                            ></span>
+                          </div>
+                          <div class="scr n1">
+                            <img
+                              src="assets/images/neo-product-1.webp"
+                              width="1600"
+                              height="800"
+                              alt=""
+                              loading="lazy"
+                            /><span
+                              class="hit"
+                              style="left: 96.4%; top: 49.2%; width: 3.2%; height: 8%"
+                            ></span>
+                          </div>
+                          <div class="scr n2">
+                            <img
+                              src="assets/images/neo-product-2.webp"
+                              width="1600"
+                              height="800"
+                              alt=""
+                              loading="lazy"
+                            /><span
+                              class="hit"
+                              style="left: 81.2%; top: 83.2%; width: 2.8%; height: 4%"
+                            ></span>
+                          </div>
+                          <div class="scr n3">
+                            <img
+                              src="assets/images/neo-product-3.webp"
+                              width="1600"
+                              height="800"
+                              alt=""
+                              loading="lazy"
+                            /><span
+                              class="hit"
+                              style="
+                                left: 65.6%;
+                                top: 20.6%;
+                                width: 2.8%;
+                                height: 3.5%;
+                              "
+                            ></span>
+                          </div>
+                          <div class="scr n4">
+                            <img
+                              src="assets/images/neo-product-4.webp"
+                              width="1600"
+                              height="800"
+                              alt=""
+                              loading="lazy"
+                            />
+                          </div>
+                          <div class="cur">
+                            <svg width="22" height="22" viewBox="0 0 22 22">
+                              <path
+                                d="M3 2l15 8-6.5 1.8L8.4 18z"
+                                fill="#1d1e22"
+                                stroke="#fff"
+                                stroke-width="1.5"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <ol class="steps">
+                          <li>Home</li>
+                          <li>Product</li>
+                          <li>Gallery</li>
+                          <li>Thumbnails</li>
+                          <li>Colours</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="wk soon" data-soon>
+                <div class="wrap wk-in">
+                  <div class="wk-txt">
+                    <p class="wk-meta">AI-integrated CRM</p>
+                    <h3>SynergyAI</h3>
+                    <p class="wk-scope">Workflow · Dashboards · AI features</p>
+                    <p class="wk-desc">Designing a CRM workflow connecting leads, customers, sales, inventory, suppliers, invoices, and payments in one platform.</p>
+                    <dl class="wk-facts">
+                    <div><dt>Designed</dt><dd>Leads-to-payments workflow in one platform</dd></div>
+                    <div><dt>AI scoped</dt><dd>Sales forecasting, inventory prediction, automated follow-ups</dd></div>
+                    </dl>
+                    <div class="links">
+                  <p class="soon-note">Case study coming soon</p>
+                    </div>
+                  </div>
+                  <div class="wk-vis">
+                    <div class="wk-sel">
+                      <i class="h tl"></i><i class="h tr"></i><i class="h bl"></i><i class="h br"></i>
+                      <span class="wk-sel-l">CRM · Workflow map</span>
+                      <div
+                        class="app syn"
+                        role="img"
+                        aria-label="Workflow covered by the SynergyAI CRM: leads, customers, sales, inventory and suppliers, invoices and payments"
+                      >
+                        <div class="bar" aria-hidden="true">
+                          <span>Workflow covered</span>
+                        </div>
+                        <div class="stage" aria-hidden="true">
+                          <div class="in">
+                            <ol class="flow">
+                              <li><span>1</span>Leads</li>
+                              <li><span>2</span>Customers</li>
+                              <li><span>3</span>Sales</li>
+                              <li><span>4</span>Inventory and suppliers</li>
+                              <li><span>5</span>Invoices and payments</li>
+                            </ol>
+                          </div>
+                        </div>
+                        <p class="steps foot">
+                          Scoped AI: forecasting, inventory prediction, follow-ups,
+                          chatbot, analytics
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="diff" id="process">
+        <div class="df-pin">
+          <div class="wrap df-in">
+            <div class="df-head">
+              <p class="df-label">How I work</p>
+              <h2>I don't stop at the Figma file.</h2>
+              <p class="lead">
+                I work closely with development to make sure the experience
+                survives the transition from design to production.
+              </p>
+              <p class="df-count" aria-hidden="true"><b>01</b> / 06</p>
+            </div>
+            <div class="df-stage">
+              <div class="wk-sel df-sel">
+                <i class="h tl"></i><i class="h tr"></i><i class="h bl"></i><i class="h br"></i>
+                <span class="wk-sel-l df-sel-l">Stage <b>01</b> of 06</span>
+                <ol class="st-cards" aria-label="Design to production, step by step">
+                <li class="st-card on" data-i="0">
+                  <p class="st-k"><span>01</span> Research</p>
+                  <h3><span>Understand the problem first</span></h3>
+                  <p class="st-d">Stakeholder conversations, user needs and business goals, turned into a clear problem to solve.</p>
+                  <dl class="st-o"><div><dt>Output</dt><dd>Problem statement · Requirements</dd></div></dl>
+                  <ul class="st-t"><li>Interviews</li><li>Competitor review</li></ul>
+                </li>
+                <li class="st-card" data-i="1">
+                  <p class="st-k"><span>02</span> UX</p>
+                  <h3><span>Shape how it should work</span></h3>
+                  <p class="st-d">User flows, information architecture and wireframes that settle the journey before any pixels.</p>
+                  <dl class="st-o"><div><dt>Output</dt><dd>User flows · Wireframes</dd></div></dl>
+                  <ul class="st-t"><li>Figma</li><li>FigJam</li></ul>
+                </li>
+                <li class="st-card" data-i="2">
+                  <p class="st-k"><span>03</span> UI</p>
+                  <h3><span>Design how it looks and feels</span></h3>
+                  <p class="st-d">High-fidelity screens, reusable components and clickable prototypes that developers can trust.</p>
+                  <dl class="st-o"><div><dt>Output</dt><dd>Figma prototypes · Components</dd></div></dl>
+                  <ul class="st-t"><li>Figma</li><li>Design systems</li></ul>
+                </li>
+                <li class="st-card" data-i="3">
+                  <p class="st-k"><span>04</span> Frontend</p>
+                  <h3><span>Build it myself</span></h3>
+                  <p class="st-d">Responsive, accessible interfaces written in HTML, CSS and JavaScript, so the design survives handoff.</p>
+                  <dl class="st-o"><div><dt>Output</dt><dd>Production-ready UI</dd></div></dl>
+                  <ul class="st-t"><li>HTML / CSS</li><li>JavaScript</li><li>Accessibility</li></ul>
+                </li>
+                <li class="st-card" data-i="4">
+                  <p class="st-k"><span>05</span> QA</p>
+                  <h3><span>Check it before users do</span></h3>
+                  <p class="st-d">Cross-device testing, bug fixes and code review across the release cycle.</p>
+                  <dl class="st-o"><div><dt>Output</dt><dd>Release-ready build</dd></div></dl>
+                  <ul class="st-t"><li>Code review</li><li>Cross-browser</li></ul>
+                </li>
+                <li class="st-card" data-i="5">
+                  <p class="st-k"><span>06</span> Ship</p>
+                  <h3><span>Release and keep improving</span></h3>
+                  <p class="st-d">Launch, watch how people use it, and iterate. Features I shipped this way lifted engagement by 20%.</p>
+                  <dl class="st-o"><div><dt>Output</dt><dd>Live product · Iterations</dd></div></dl>
+                  <ul class="st-t"><li>Release</li><li>Iteration</li></ul>
+                </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="wrap df-line">
+            <ol class="st-bar" aria-hidden="true">
+              <span class="st-fill"></span>
+              <li class="st-s on"><i></i><span>01</span><b>Research</b></li>
+              <li class="st-s"><i></i><span>02</span><b>UX</b></li>
+              <li class="st-s"><i></i><span>03</span><b>UI</b></li>
+              <li class="st-s"><i></i><span>04</span><b>Frontend</b></li>
+              <li class="st-s"><i></i><span>05</span><b>QA</b></li>
+              <li class="st-s"><i></i><span>06</span><b>Ship</b></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="wrap grid">
+          <div class="about-l">
+            <p class="sec-label">About &amp; experience</p>
+            <h2>Designer who likes understanding how things work.</h2>
+            <figure class="portrait">
+              <div class="frame">
+                <img
+                  src="assets/images/anupa-portrait.webp"
+                  width="975"
+                  height="1104"
+                  loading="lazy"
+                  alt="Portrait of Anupa Kapri, drawn in a black and white pixel style"
+                />
+              </div>
+              <figcaption>
+                <span>Anupa Kapri</span><span>Gothenburg, SE · 57.7°N</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="body">
+            <p>
+              I'm a Product Designer with 6+ years of experience working across
+              UX, UI, and frontend development. I enjoy taking ambiguous
+              problems, turning them into clear user experiences, and staying
+              close enough to development to see the work through to production.
+            </p>
+            <dl class="facts2">
+              <div>
+                <dt>Based in</dt>
+                <dd>Gothenburg, Sweden</dd>
+              </div>
+              <div>
+                <dt>Languages</dt>
+                <dd>English · Hindi · Nepali · Basic Swedish</dd>
+              </div>
+              <div>
+                <dt>Worked on</dt>
+                <dd>Insurance, CRM, web applications, consumer brands</dd>
+              </div>
+            </dl>
+            <div class="exp-block" id="experience">
+              <div class="exp-head">
+                <p class="sec-label">Experience</p>
+                <h3>6+ years designing and building digital products.</h3>
+              </div>
+              <div class="timeline">
+            <div class="job rv">
+              <p class="when">April 2024 – April 2026</p>
+              <h3>Senior Full Stack Designer</h3>
+              <p class="co">Neo Assure Pvt. Ltd.</p>
+              <ul>
+                <li>Owned product design end to end for client web products</li>
+                <li>Worked directly with business analysts and developers</li>
+                <li>
+                  Built responsive, WCAG-aligned interfaces in HTML, CSS and
+                  JavaScript
+                </li>
+                <li>
+                  Designed and implemented features that increased user
+                  engagement by 20%
+                </li>
+                <li>
+                  Owned QA, bug fixes and code review across the release cycle
+                </li>
+                <li>Mentored 4 interns and junior designers</li>
+              </ul>
+            </div>
+            <div class="job rv">
+              <p class="when">October 2019 – April 2024</p>
+              <h3>UI/UX Developer</h3>
+              <p class="co">Neo Software Pvt. Ltd.</p>
+              <ul>
+                <li>
+                  Turned mockups into responsive, accessible sites in HTML, CSS
+                  and JavaScript
+                </li>
+                <li>Built features in close coordination with developers</li>
+                <li>Code reviews and bug fixes before and after deployment</li>
+                <li>
+                  Maintained documentation that improved cross-team handoff
+                </li>
+              </ul>
+            </div>
+            <div class="job rv">
+              <p class="when">May 2019 – August 2019</p>
+              <h3>UI/UX Developer</h3>
+              <p class="co">Podamibe Nepal Pvt. Ltd.</p>
+              <ul>
+                <li>
+                  UX/UI mockups and HTML/CSS layouts, tested across devices and
+                  browsers
+                </li>
+              </ul>
+            </div>
+              </div>
+            </div>
+            <p class="sec-label skills-label">Skills &amp; tools</p>
+            <div class="skills">
+              <div>
+                <h3>Product</h3>
+                <ul>
+                  <li>User research</li>
+                  <li>User flows</li>
+                  <li>Wireframing</li>
+                  <li>Prototyping</li>
+                  <li>Usability testing</li>
+                  <li>Information architecture</li>
+                </ul>
+              </div>
+              <div>
+                <h3>UI</h3>
+                <ul>
+                  <li>Design systems</li>
+                  <li>Interface design</li>
+                  <li>Responsive design</li>
+                  <li>Accessibility</li>
+                  <li>Interface copy</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Build</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS / SCSS</li>
+                  <li>JavaScript</li>
+                  <li>Bootstrap</li>
+                  <li>Tailwind CSS</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Tools</h3>
+                <ul>
+                  <li>Figma</li>
+                  <li>Adobe XD</li>
+                  <li>Photoshop</li>
+                  <li>Illustrator</li>
+                  <li>Canva</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="life" class="life">
+        <div class="wrap grid">
+          <div class="life-txt">
+            <p class="sec-label">Off the clock</p>
+            <h2>Me, away from my laptop</h2>
+            <p class="life-lead">A curious soul with a slightly questionable relationship with fear.</p>
+            <div class="life-body">
+              <p>I'm scared of heights, enclosed spaces, unfamiliar places, and basically anything that belongs in a horror movie. Yet somehow, I've gone bungee jumping, trekked through mountains, and watched horror movies through the gaps between my fingers. Make it make sense. 😂</p>
+              <p>When I'm not chasing an adrenaline rush, I'm probably trying a new recipe, baking something my husband has no choice but to taste, falling down a random internet rabbit hole, or curled up on the sofa watching crime thrillers.</p>
+              <p>I'm a little introverted, a bit of an observer, and most myself around my favourite people. One day, I'd love to go on a solo adventure and try scuba diving. Terrified? Probably. Going to do it anyway? Also probably.</p>
+            </div>
+          </div>
+          <div class="life-gal" aria-label="Photos from my life outside work">
+            <div class="lg-col up">
+              <div class="lg-track">
+                <figure class="lg-card"><img src="assets/images/life/life-01.webp" alt="On a street in Luxembourg" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-03.webp" alt="At High Camp on a trek with friends" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-05.webp" alt="Trekking through a forest" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-07.webp" alt="A bowl of ramen" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-09.webp" alt="With friends in Luxembourg" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-11.webp" alt="Cooking on a mountain top" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-13.webp" alt="Boarding a mountain flight with friends" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-15.webp" alt="Cooking noodles on a trek" loading="lazy" /></figure>
+              </div>
+            </div>
+            <div class="lg-col down">
+              <div class="lg-track">
+                <figure class="lg-card"><img src="assets/images/life/life-02.webp" alt="Riding a jet ski" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-04.webp" alt="At a temple in Bangkok with friends" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-06.webp" alt="Meeting an elephant" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-08.webp" alt="In Paris, with the Eiffel Tower behind" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-10.webp" alt="With a wax figure of Einstein" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-12.webp" alt="With a spotted deer" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-14.webp" alt="With my husband at a café" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-16.webp" alt="A hug from a little one" loading="lazy" /></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="wrap grid">
+          <h2>Have a product worth making better?</h2>
+          <p class="lead">
+            I'm open to Product Design, UX Design, and UI/UX opportunities in
+            Sweden and Europe.
+          </p>
+          <div class="go">
+            <a class="btn" href="mailto:anupakapri.ak@gmail.com"
+              >Let's talk <span class="arrow" aria-hidden="true">→</span></a
+            >
+            <ul>
+              <li>
+                <span>Email</span
+                ><a class="link" href="mailto:anupakapri.ak@gmail.com"
+                  >anupakapri.ak@gmail.com</a
+                >
+              </li>
+              <li>
+                <span>LinkedIn</span
+                ><a
+                  class="link"
+                  href="https://linkedin.com/in/anupakapri"
+                  rel="noopener"
+                  >linkedin.com/in/anupakapri</a
+                >
+              </li>
+              <li>
+                <span>Portfolio</span
+                ><a class="link" href="https://anupakapri.com.np"
+                  >anupakapri.com.np</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
         <div>
-          <div class="card-5-num"></div>
+          <b>ANUPA KAPRI</b><br />Product Designer · UX Designer<br />Gothenburg,
+          Sweden · <span class="clock" data-clock>--:--</span>
         </div>
         <div>
-          <div class="bento-label text-white" style="opacity:0.65; margin-bottom:0.6rem;">05-InsurTech</div>
-          <div class="bento-name text-white" style="font-size:1.15rem; margin-bottom:0.5rem;">Neoassure</div>
-          <div class="bento-desc text-white" style="opacity:0.75; font-size:0.9rem; margin-bottom:1rem;">An InsurTech-based corporate agent for non-life insurance in Nepal.</div>
-          <div class="bento-meta">
-            <div class="bento-tags">
-              <span class="bento-tag" style="background:rgba(255,255,255,0.2);color:white;">Branding</span>
-            </div>
-            <a href="https://neoassure.com.np/" target="_blank" class="bento-arrow">
-              <svg fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.5"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-            </a>
-          </div>
+          <a
+            class="link"
+            href="https://linkedin.com/in/anupakapri"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          &nbsp; <a class="link" href="mailto:anupakapri.ak@gmail.com">Email</a
+          >
+          &nbsp; <a class="link" href="#top">Back to top ↑</a
+          ><br />© 2026 Anupa Kapri
         </div>
       </div>
-    </div>
+    </footer>
 
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="skills-section">
-  <div class="section-label">Capabilities</div>
-  <h2 class="section-title">What I bring to the <em>table</em></h2>
-
-  <div class="skills-grid">
-    <div class="skill-card fade-in">
-      <div class="skill-icon">
-        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--accent-dark)" stroke-width="2">
-          <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-          <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
-        </svg>
-      </div>
-      <h3>UX Research & Strategy</h3>
-      <p>I uncover what users truly need — not just what they say — through mixed methods research that translates into design decisions that hold up under scrutiny.</p>
-      <div class="skill-tools">
-        <span class="skill-tool">User Interviews</span>
-        <span class="skill-tool">Usability Testing</span>
-        <span class="skill-tool">Journey Mapping</span>
-        <span class="skill-tool">Card Sorting</span>
-      </div>
-    </div>
-
-    <div class="skill-card fade-in fade-in-delay-1">
-      <div class="skill-icon">
-        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--accent-dark)" stroke-width="2">
-          <path d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zM14 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"/>
-        </svg>
-      </div>
-      <h3>Interface & Visual Design</h3>
-      <p>From wireframe to high-fidelity — I craft interfaces that are as beautiful as they are functional, with obsessive attention to typography, spacing, and micro-details.</p>
-      <div class="skill-tools">
-        <span class="skill-tool">Figma</span>
-        <span class="skill-tool">Design Systems</span> 
-        <span class="skill-tool">Prototyping</span>
-        <span class="skill-tool">Front-End</span>
-      </div>
-    </div>
-
-    <div class="skill-card fade-in fade-in-delay-2">
-      <div class="skill-icon">
-        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--accent-dark)" stroke-width="2">
-          <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
-        </svg>
-      </div>
-      <h3>Cross-functional Collaboration</h3>
-      <p>I bridge design and engineering, speaking both languages fluently. I run workshops, present to stakeholders, and align product, dev, and business toward a shared vision.</p>
-      <div class="skill-tools">
-        <span class="skill-tool">Design Sprints</span>
-        <span class="skill-tool">Stakeholder Mgmt</span>
-        <span class="skill-tool">Dev Handoff</span>
-        <span class="skill-tool">Workshops</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PHILOSOPHY DARK -->
-<section class="philosophy-section">
-  <div class="philosophy-inner fade-in">
-    <div class="section-label" style="color:rgba(255,255,255,0.35);">Design philosophy</div>
-    <p class="philosophy-quote">
-      As Steve Jobs said - Design is not just what it <em>looks like</em> and feels like.
-      Design is how it <em>works</em>. <br>I build for the space between 
-      the pixels and the person."
-    </p>
-    <!-- <div class="philosophy-meta">— Anupa, on human-centered design</div> -->
-  </div>
-
-  <div class="values-row fade-in">
-    <div class="value-item">
-      <div class="value-num">01</div>
-      <div class="value-title">Empathy First</div>
-      <div class="value-desc">Every design decision starts with a deep understanding of who will use it and why.</div>
-    </div>
-    <div class="value-item">
-      <div class="value-num">02</div>
-      <div class="value-title">Clarity Over Cleverness</div>
-      <div class="value-desc">A great interface disappears. The user shouldn't notice the design — only the experience.</div>
-    </div>
-    <div class="value-item">
-      <div class="value-num">03</div>
-      <div class="value-title">Details Matter</div>
-      <div class="value-desc">The micro-interactions, the spacing, the motion — they add up to a feeling of quality.</div>
-    </div>
-    <div class="value-item">
-      <div class="value-num">04</div>
-      <div class="value-title">Iterate Boldly</div>
-      <div class="value-desc">Ship, learn, and improve. Perfection is found in the process, not the first draft.</div>
-    </div>
-  </div>
-</section>
-
-<!-- CONNECT -->
-<section id="connect" class="connect-section">
-  <div class="section-label">Let's work together</div>
-  <h2 class="section-title" style="margin-bottom:0.3rem;">Got a project<br>in mind?</h2>
-  <a href="mailto:anupakapri.ak@gmail.com" class="connect-email">anupakapri.ak@gmail.com</a>
-  <div class="social-row">
-    <a href="https://www.linkedin.com/in/anupa-kapri-65289519a/" target="_blank" class="social-btn">LinkedIn</a>
-    <a href="#" class="social-btn">Dribbble</a>
-    <a href="#" class="social-btn">Behance</a>
-    <!-- <a href="#" class="social-btn">Read.cv</a> -->
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="logo">Anupa Kapri © 2025</div>
-  <div class="copy">Designed & built with care ✦</div>
-</footer>
-<script src="./assets/js/costum.js"></script>
-</body>
+    <script>
+      (function () {
+        var h = document.querySelector("header"),
+          b = document.querySelector(".menu-btn"),
+          m = document.getElementById("menu");
+        function s() {
+          h.classList.toggle("scrolled", window.scrollY > 8);
+        }
+        s();
+        addEventListener("scroll", s, { passive: true });
+        b.addEventListener("click", function () {
+          var o = m.classList.toggle("open");
+          b.setAttribute("aria-expanded", o);
+        });
+        m.addEventListener("click", function (e) {
+          if (e.target.tagName === "A") {
+            m.classList.remove("open");
+            b.setAttribute("aria-expanded", "false");
+          }
+        });
+        function App(ap, script, last) {
+          var st = ap.querySelector(".stage"),
+            sc = ap.querySelectorAll(".scr"),
+            cu = ap.querySelector(".cur"),
+            sp = ap.querySelectorAll(".steps li"),
+            tok = 0,
+            h = { st: st };
+          h.show = function (i) {
+            sc.forEach(function (e, k) {
+              e.classList.toggle("on", k === i);
+              e.classList.toggle("off", k < i);
+            });
+            sp.forEach(function (e, k) {
+              e.classList.toggle("on", k === i);
+            });
+            var u = sc[i] && sc[i].dataset.url,
+              bs = ap.querySelector(".bar span");
+            if (u && bs) bs.textContent = u;
+          };
+          h.sl = function (ms, t) {
+            return new Promise(function (res, rej) {
+              setTimeout(function () {
+                t === tok ? res() : rej();
+              }, ms);
+            });
+          };
+          h.mv = function (el, t) {
+            var a = st.getBoundingClientRect(),
+              b = el.getBoundingClientRect();
+            cu.style.transform =
+              "translate(" +
+              (b.left - a.left + b.width * 0.55) +
+              "px," +
+              (b.top - a.top + b.height * 0.4) +
+              "px)";
+            return h.sl(950, t);
+          };
+          h.clk = function (sel, t) {
+            var el = ap.querySelector(sel);
+            return h
+              .mv(el, t)
+              .then(function () {
+                cu.classList.add("press");
+                el.style.transform = "scale(.96)";
+                return h.sl(180, t);
+              })
+              .then(function () {
+                cu.classList.remove("press");
+                el.style.transform = "";
+                return h.sl(120, t);
+              });
+          };
+          h.hide = function () {
+            cu.classList.remove("vis");
+          };
+          h.reset = function () {
+            cu.style.transition = "none";
+            cu.style.transform =
+              "translate(" +
+              st.offsetWidth * 0.7 +
+              "px," +
+              st.offsetHeight * 0.9 +
+              "px)";
+            cu.offsetWidth;
+            cu.style.transition = "";
+            cu.classList.add("vis");
+            sc.forEach(function (e) {
+              e.style.transition = "none";
+            });
+            h.show(0);
+            ap.offsetWidth;
+            sc.forEach(function (e) {
+              e.style.transition = "";
+            });
+          };
+          async function play(t) {
+            try {
+              while (t === tok) {
+                h.reset();
+                await script(h, t);
+              }
+            } catch (e) {}
+          }
+          if (
+            matchMedia("(prefers-reduced-motion:reduce)").matches ||
+            !("IntersectionObserver" in window)
+          ) {
+            h.show(last);
+          } else
+            new IntersectionObserver(
+              function (es) {
+                es.forEach(function (x) {
+                  tok++;
+                  if (x.isIntersecting) play(tok);
+                });
+              },
+              { threshold: 0.35 },
+            ).observe(ap);
+        }
+        var a1 = document.querySelector(".app.quote"),
+          a2 = document.querySelector(".app.neo");
+        if (a1) {
+          var s0 = a1.querySelector(".s0"),
+            s4 = a1.querySelector(".s4");
+          App(
+            a1,
+            async function (h, t) {
+              s4.classList.remove("go");
+              s0.classList.remove("go");
+              h.st.classList.remove("ok");
+              s0.style.setProperty(
+                "--d",
+                Math.max(
+                  0,
+                  s0.querySelector("img").offsetHeight - h.st.offsetHeight,
+                ),
+              );
+              await h.sl(1000, t);
+              s0.classList.add("go");
+              await h.sl(5600, t);
+              s0.classList.remove("go");
+              await h.sl(1700, t);
+              await h.clk(".s0 .hit", t);
+              h.show(1);
+              await h.sl(1200, t);
+              await h.clk(".s1 .hit", t);
+              h.show(2);
+              await h.sl(1300, t);
+              await h.clk(".s2 .hit", t);
+              h.show(3);
+              await h.sl(900, t);
+              h.st.classList.add("ok");
+              await h.sl(1100, t);
+              await h.clk(".s3 .hit", t);
+              h.hide();
+              h.show(4);
+              s4.style.setProperty(
+                "--d",
+                Math.max(
+                  0,
+                  s4.querySelector("img").offsetHeight - h.st.offsetHeight,
+                ),
+              );
+              s4.classList.add("go");
+              await h.sl(7500, t);
+            },
+            4,
+          );
+        }
+        if (a2)
+          App(
+            a2,
+            async function (h, t) {
+              await h.sl(1200, t);
+              await h.clk(".n0 .hit", t);
+              h.show(1);
+              await h.sl(1500, t);
+              await h.clk(".n1 .hit", t);
+              h.show(2);
+              await h.sl(1300, t);
+              await h.clk(".n2 .hit", t);
+              h.show(3);
+              await h.sl(1300, t);
+              await h.clk(".n3 .hit", t);
+              h.show(4);
+              h.hide();
+              await h.sl(3000, t);
+            },
+            4,
+          );
+      })();
+    </script>
+    <script src="assets/js/vendor/gsap.min.js" defer></script>
+    <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+    <script src="assets/js/vendor/SplitText.min.js" defer></script>
+    <script src="assets/js/vendor/lenis.min.js" defer></script>
+    <script src="assets/js/motion.js" defer></script>
+      <script src="assets/js/coming-soon.js" defer></script>
+  </body>
 </html>
