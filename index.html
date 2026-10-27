@@ -29,12 +29,16 @@
       href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css?v=20261017">
-    <link rel="stylesheet" href="assets/css/motion.css?v=20261017">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/motion.css">
     <script>
       /* Hide animated elements until motion.js takes over; fail open after 3s. */
       (function (d) {
         if (matchMedia("(prefers-reduced-motion:reduce)").matches) return;
+        /* The pinned scroll sections change the page height once they are set up,
+           so the browser's own scroll restoration lands in the wrong place on reload.
+           motion.js remembers the position and restores it after setup instead. */
+        if ("scrollRestoration" in history) history.scrollRestoration = "manual";
         d.classList.add("js-motion");
         try {
           if (!sessionStorage.getItem("ak-intro")) {
@@ -669,9 +673,9 @@
           <div class="life-txt">
             <p class="sec-label">Off the clock</p>
             <h2>Me, away from my laptop</h2>
-            <p class="life-lead">A curious soul with a slightly questionable relationship with fear.</p>
+            <!-- <p class="life-lead">A curious soul with a slightly questionable relationship with fear.</p> -->
             <div class="life-body">
-              <p>I'm scared of heights, enclosed spaces, unfamiliar places, and basically anything that belongs in a horror movie. Yet somehow, I've gone bungee jumping, trekked through mountains, and watched horror movies through the gaps between my fingers. Make it make sense. 😂</p>
+              <p>I'm scared of heights, enclosed spaces, unfamiliar places, and basically anything that belongs in a horror movie. Yet somehow, I've gone bungee jumping, trekked through mountains, and watched horror movies through the gaps between my fingers. Make it make sense. ;)</p>
               <p>When I'm not chasing an adrenaline rush, I'm probably trying a new recipe, baking something my husband has no choice but to taste, falling down a random internet rabbit hole, or curled up on the sofa watching crime thrillers.</p>
               <p>I'm a little introverted, a bit of an observer, and most myself around my favourite people. One day, I'd love to go on a solo adventure and try scuba diving. Terrified? Probably. Going to do it anyway? Also probably.</p>
             </div>
@@ -687,6 +691,7 @@
                 <figure class="lg-card"><img src="assets/images/life/life-11.webp" alt="Cooking on a mountain top" loading="lazy" /></figure>
                 <figure class="lg-card"><img src="assets/images/life/life-13.webp" alt="Boarding a mountain flight with friends" loading="lazy" /></figure>
                 <figure class="lg-card"><img src="assets/images/life/life-15.webp" alt="Cooking noodles on a trek" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-17.jpeg" alt="Bunjee Jumping" loading="lazy" /></figure>
               </div>
             </div>
             <div class="lg-col down">
@@ -698,7 +703,8 @@
                 <figure class="lg-card"><img src="assets/images/life/life-10.webp" alt="With a wax figure of Einstein" loading="lazy" /></figure>
                 <figure class="lg-card"><img src="assets/images/life/life-12.webp" alt="With a spotted deer" loading="lazy" /></figure>
                 <figure class="lg-card"><img src="assets/images/life/life-14.webp" alt="With my husband at a café" loading="lazy" /></figure>
-                <figure class="lg-card"><img src="assets/images/life/life-16.webp" alt="A hug from a little one" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-16.webp" alt="A hug from my brother" loading="lazy" /></figure>
+                <figure class="lg-card"><img src="assets/images/life/life-18.jpeg" alt="Water Biking" loading="lazy" /></figure>
               </div>
             </div>
           </div>
@@ -961,7 +967,7 @@
     <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
     <script src="assets/js/vendor/SplitText.min.js" defer></script>
     <script src="assets/js/vendor/lenis.min.js" defer></script>
-    <script src="assets/js/motion.js?v=20261017" defer></script>
-      <script src="assets/js/coming-soon.js?v=20261017" defer></script>
+    <script src="assets/js/motion.js" defer></script>
+      <script src="assets/js/coming-soon.js" defer></script>
   </body>
 </html>

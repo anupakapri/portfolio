@@ -32,11 +32,15 @@
       href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/css/style.css?v=20261017">
-    <link rel="stylesheet" href="../assets/css/motion.css?v=20261017">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/motion.css">
     <script>
       (function (d) {
         if (matchMedia("(prefers-reduced-motion:reduce)").matches) return;
+        /* The pinned scroll sections change the page height once they are set up,
+           so the browser's own scroll restoration lands in the wrong place on reload.
+           motion.js remembers the position and restores it after setup instead. */
+        if ("scrollRestoration" in history) history.scrollRestoration = "manual";
         d.classList.add("js-motion");
         setTimeout(function () {
           if (!window.__motionReady) d.classList.remove("js-motion");
@@ -1292,8 +1296,8 @@
     <script src="../assets/js/vendor/ScrollTrigger.min.js" defer></script>
     <script src="../assets/js/vendor/SplitText.min.js" defer></script>
     <script src="../assets/js/vendor/lenis.min.js" defer></script>
-    <script src="../assets/js/motion.js?v=20261017" defer></script>
-      <script src="../assets/js/coming-soon.js?v=20261017" defer></script>
-    <script src="../assets/js/case-tabs.js?v=20261017" defer></script>
+    <script src="../assets/js/motion.js" defer></script>
+      <script src="../assets/js/coming-soon.js" defer></script>
+    <script src="../assets/js/case-tabs.js" defer></script>
   </body>
 </html>

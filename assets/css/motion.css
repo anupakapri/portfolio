@@ -10,6 +10,11 @@ html.lenis,
 html.lenis body {
   height: auto;
 }
+/* Lenis does the smoothing. Native smooth scrolling (style.css) must be off,
+   otherwise ScrollTrigger's instant jumps while measuring become animated
+   and pinned sections get measured at the wrong scroll position. */
+html.lenis,
+html.js-motion,
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
 }

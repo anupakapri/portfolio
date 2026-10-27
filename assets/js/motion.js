@@ -197,10 +197,10 @@
         hero.classList.toggle("is-build", G.getProperty(stage, "--p") > 52);
       },
       scrollTrigger: {
-        trigger: desk ? $(".hero-pin", hero) : stage,
+        trigger: desk ? hero : stage,
         start: desk ? "top 64px" : "top 80%",
-        end: desk ? "+=130%" : "bottom 30%",
-        pin: desk,
+        end: desk ? function () { return "+=" + Math.round(innerHeight * 1.3); } : "bottom 30%",
+        pin: desk ? $(".hero-pin", hero) : false,
         scrub: 0.6,
         invalidateOnRefresh: true,
         onRefresh: function (self) { if (desk) heroEnd = self.end; },
@@ -711,9 +711,47 @@
   /* ---------- Boot (after fonts so line splits are accurate) ---------- */
   var fonts = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
   var booted = false;
+  /* Scroll position across reloads (browser restoration is switched off in <head>) */
+  var KEY = "ak-scroll:" + location.pathname;
+  function saveScroll() {
+    try { sessionStorage.setItem(KEY, String(Math.round(window.scrollY))); } catch (e) {}
+  }
+  addEventListener("pagehide", saveScroll);
+  addEventListener("beforeunload", saveScroll);
+  function savedScroll() {
+    try {
+      var v = parseInt(sessionStorage.getItem(KEY), 10);
+      return isNaN(v) ? 0 : v;
+    } catch (e) { return 0; }
+  }
+
+  function restoreScroll() {
+    var hash = location.hash && location.hash.length > 1 ? location.hash.slice(1) : "";
+    var el = hash ? document.getElementById(hash) : null;
+    var target = savedScroll();
+    var go = function () {
+      if (el && el.closest("[hidden]") === null) {
+        var y = el.getBoundingClientRect().top + window.scrollY - 72;
+        if (lenis) lenis.scrollTo(y, { immediate: true, force: true });
+        else window.scrollTo(0, y);
+      } else if (target > 0) {
+        var max = document.documentElement.scrollHeight - innerHeight;
+        var y2 = Math.min(target, max);
+        if (lenis) lenis.scrollTo(y2, { immediate: true, force: true });
+        else window.scrollTo(0, y2);
+      }
+      ST.update();
+    };
+    /* two frames so pin spacers and SplitText lines are in place */
+    requestAnimationFrame(function () { requestAnimationFrame(go); });
+  }
+
   function boot() {
     if (booted) return;
     booted = true;
+    /* every trigger is measured from the top of the page */
+    window.scrollTo(0, 0);
+    if (lenis) lenis.scrollTo(0, { immediate: true, force: true });
     heroScroll();
     workScroll();
     processScroll();
@@ -723,7 +761,24 @@
     leftovers();
     magnetic();
     intro(heroIn);
-    addEventListener("load", function () { ST.refresh(); });
+    ST.refresh();
+    restoreScroll();
+    /* late images or fonts can still change the layout */
+    var settle = function () {
+      ST.refresh();
+      /* if the page was still too short to reach the saved spot, try again */
+      var t = savedScroll();
+      if (!location.hash && t > 0 && Math.abs(window.scrollY - t) > 4) {
+        var max = document.documentElement.scrollHeight - innerHeight;
+        var y = Math.min(t, max);
+        if (lenis) lenis.scrollTo(y, { immediate: true, force: true });
+        else window.scrollTo(0, y);
+        ST.update();
+      }
+    };
+    if (document.readyState === "complete") setTimeout(settle, 0);
+    else addEventListener("load", settle, { once: true });
+    setTimeout(settle, 900);
   }
   Promise.race([fonts, new Promise(function (r) { setTimeout(r, 1200); })]).then(boot);
 })();
