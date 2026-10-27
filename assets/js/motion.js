@@ -635,10 +635,12 @@
       });
     });
 
-    /* stacking screens: each card sinks back as the next one lands on it */
+    /* stacking screens: each card sinks back only while the next one
+       actually covers it. Measured from real positions every frame, so a
+       card is never tinted before the next one reaches it. */
     var cards = $$(".page-case .stack-card");
-    cards.forEach(function (c, i) {
-      var nxt = cards[i + 1], img = $("img", c);
+    cards.forEach(function (c) {
+      var img = $("img", c);
       if (img) {
         G.fromTo(img, { scale: 1.06 }, {
           scale: 1,
@@ -646,20 +648,31 @@
           scrollTrigger: { trigger: c, start: "top bottom", end: "top 30%", scrub: true },
         });
       }
-      if (!nxt) return;
-      G.to(c, {
-        scale: 0.92 + i * 0.008,
-        "--dim": 0.55,
-        ease: "none",
-        scrollTrigger: {
-          trigger: nxt,
-          start: "top bottom",
-          end: function () { return "top " + (parseFloat(getComputedStyle(nxt).top) || 0) + "px"; },
-          scrub: true,
-          invalidateOnRefresh: true,
-        },
-      });
     });
+    if (cards.length > 1) {
+      var setters = cards.map(function (c) {
+        return { dim: function (v) { c.style.setProperty("--dim", v); }, scale: function (v) { c.style.scale = v.toFixed(4); } };
+      });
+      var updateStack = function () {
+        for (var k = 0; k < cards.length - 1; k++) {
+          var c = cards[k], nxt = cards[k + 1];
+          var cH = c.offsetHeight;                     /* unscaled height; 0 while the tab is hidden */
+          if (!cH) continue;
+          var cTop = c.getBoundingClientRect().top;   /* top is unaffected by its own scale (origin is the top) */
+          var nTop = nxt.getBoundingClientRect().top;
+          var cover = Math.max(0, Math.min(1, (cTop + cH - nTop) / cH));
+          setters[k].dim((cover * 0.18).toFixed(3));
+          setters[k].scale(1 - cover * (0.05 - k * 0.006));
+        }
+      };
+      if (lenis) lenis.on("scroll", updateStack);
+      addEventListener("scroll", updateStack, { passive: true });
+      addEventListener("resize", updateStack);
+      $$('[role="tab"], [data-go]').forEach(function (t) {
+        t.addEventListener("click", function () { requestAnimationFrame(updateStack); });
+      });
+      updateStack();
+    }
 
     $$(".page-case .fig:not(.sl-slide) img").forEach(function (img) {
       G.fromTo(img, { clipPath: "inset(8% 8% 8% 8%)" }, {

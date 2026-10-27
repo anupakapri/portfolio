@@ -15,9 +15,16 @@
     if (history.replaceState) {
       history.replaceState(null, "", name === "full" ? "#full" : "#tldr");
     }
-    if (scroll && bar) {
-      var top = bar.getBoundingClientRect().top + window.scrollY - 64;
-      if (window.scrollY > top) window.scrollTo({ top: top });
+    if (scroll) {
+      /* start the chosen tab at its first section (TL;DR goal / Overview).
+         Measured from the panel, because the sticky tab bar reports its
+         stuck position rather than where it sits on the page. */
+      var panel = document.getElementById("panel-" + name);
+      var header = document.querySelector("header");
+      var offset = (bar ? bar.offsetHeight : 0) + (header ? header.offsetHeight : 0);
+      var y = Math.max(0, panel.getBoundingClientRect().top + window.scrollY - offset);
+      if (window.__lenis) window.__lenis.scrollTo(y, { immediate: true, force: true });
+      else window.scrollTo({ top: y });
     }
   }
 

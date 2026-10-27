@@ -1552,3 +1552,264 @@ body.page-home {
     padding-bottom: 12px;
   }
 }
+
+/* ==========================================================
+   Case study: stats row, decision blocks, 4-column hero meta
+   ========================================================== */
+.page-case .meta3.m4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.page-case .kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin: 40px 0 8px;
+  border-top: 1px solid var(--ink);
+}
+.page-case .kpis div {
+  padding-top: 16px;
+}
+.page-case .kpis dd {
+  order: -1;
+  font-size: clamp(26px, 2.6vw, 40px);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+  line-height: 1;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.page-case .kpis div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.page-case .kpis dt {
+  font-size: 14px;
+  color: var(--mute);
+  max-width: 22ch;
+}
+.page-case .dec-n {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+.page-case .dec-n + h2 {
+  margin-bottom: 18px;
+}
+.page-case .dec {
+  margin: 28px 0 8px;
+  border-top: 1px solid var(--ink);
+  font-size: 17px;
+  max-width: 62rem;
+}
+.page-case .dec div {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.page-case .dec dt {
+  font-size: 14px;
+  color: var(--mute);
+  padding-top: 2px;
+}
+.page-case .dec dd {
+  max-width: 60ch;
+}
+@media (max-width: 960px) {
+  .page-case .meta3.m4,
+  .page-case .kpis {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .page-case .meta3.m4 {
+    grid-template-columns: 1fr;
+  }
+  .page-case .dec div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+/* purchase journey: equal-height screens */
+.page-case #purchase .seq .fig img {
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  object-position: top left;
+}
+
+/* before / after image pair */
+.page-case .bafig {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 24px;
+}
+.page-case .tl-s .bafig {
+  grid-template-columns: 1fr;
+}
+.page-case .bafig .fig {
+  position: relative;
+}
+.page-case .bafig img {
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  object-position: top center;
+}
+.page-case .bf-tag {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+  padding: 3px 9px;
+  border-radius: 3px;
+  background: var(--ink);
+  color: var(--bg);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.page-case .bf-tag.after {
+  background: var(--accent);
+}
+@media (max-width: 760px) {
+  .page-case .bafig {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================
+   Case study, aligned with the homepage
+   ========================================================== */
+/* same canvas as the homepage, so header and content line up across pages */
+body.page-case {
+  --wrap: 1520px;
+  --pad: clamp(20px, 3.4vw, 56px);
+  font-size: 19px;
+}
+.page-case .sec {
+  padding: clamp(88px, 11vw, 144px) 0;
+}
+
+/* heading scale */
+.page-case h1 {
+  font-size: clamp(52px, 7vw, 104px);
+  letter-spacing: -0.045em;
+}
+.page-case .sec h2 {
+  font-size: clamp(34px, 4.4vw, 66px);
+  letter-spacing: -0.035em;
+  line-height: 1.04;
+  margin-bottom: 28px;
+}
+.page-case .dec-n + h2 {
+  margin-bottom: 22px;
+}
+
+/* labels: sentence case with a short black rule, like the homepage */
+.page-case .lab {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--ink);
+  width: fit-content;
+  min-width: 64px;
+}
+.page-case .hero .label,
+.page-case .goal-l,
+.page-case .tag,
+.page-case .dec-n,
+.page-case .ba h4,
+.page-case .lane > p,
+.page-case .nx span {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 14px;
+}
+.page-case .tag,
+.page-case .dec-n,
+.page-case .ba h4 {
+  font-weight: 500;
+}
+
+/* selection frame (same language as the homepage hero and projects) */
+.page-case .selbox {
+  position: relative;
+  padding: 8px;
+  border: 1px solid var(--accent);
+  margin-top: 26px;
+}
+.page-case .bafig .selbox {
+  margin-top: 0;
+}
+.page-case .selbox img {
+  border-radius: 2px;
+}
+.page-case .selbox .h {
+  position: absolute;
+  z-index: 2;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border: 1px solid var(--accent);
+}
+.page-case .selbox .tl { left: -4.5px; top: -4.5px; }
+.page-case .selbox .tr { right: -4.5px; top: -4.5px; }
+.page-case .selbox .bl { left: -4.5px; bottom: -4.5px; }
+.page-case .selbox .br { right: -4.5px; bottom: -4.5px; }
+.page-case .sb-l {
+  position: absolute;
+  left: -1px;
+  bottom: 100%;
+  margin-bottom: 6px;
+  padding: 1px 8px;
+  border-radius: 2px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.page-case .fig:has(.selbox) {
+  padding-top: 6px;
+}
+.page-case .fig .selbox + figcaption,
+.page-case .fig:has(.selbox) figcaption {
+  margin-top: 12px;
+}
+.page-case .fig:hover .selbox img {
+  transform: none;
+}
+@media (max-width: 640px) {
+  .page-case .selbox {
+    padding: 5px;
+  }
+  .page-case .sb-l {
+    font-size: 11px;
+  }
+}
+
+/* phone screenshot shown near its real size, in a panel matching the image beside it */
+.page-case .phone-shot {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1200/917;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+}
+.page-case .phone-shot img {
+  width: auto;
+  height: 86%;
+  max-height: 384px;
+  border: 0;
+  background: none;
+}
